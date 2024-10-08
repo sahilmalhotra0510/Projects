@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en-us">
+	<head>
+		<script type="text/javascript">
+			if (location.host.indexOf('model.georgia') >= 0) {
+				window.location = 'https://model.earth/projects'; // Until base href is added to page so links work.
+			}
+		</script>
+		<meta charset="utf-8" />
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+		<title>Projects</title>
+		<link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<script
+			type="text/javascript"
+			src="/localsite/js/localsite.js?showheader=true"
+		></script>
+
+		<script>
+		loadMarkdown('active.md', 'activeDiv', '_parent',1, formatBuckets('activeDiv'));
+		</script>
+
+		<style>
+			body {
+				font-family: 'Nunito Sans', sans-serif;
+			}
+			li p {
+				/* Not sure why this became necessary */
+				margin-top: 0px;
+				margin-bottom: 2px;
+			}
+			.bucket {
+				background-color: #ccc;
+				border: 1px solid #000;
+			}
+			#activeDiv h2 {
+				background-color: #ddd;
+				padding-top: 6px !important;
+				padding-left: 15px;
+				color: #333;
+				line-heightX: 27px !important;
+			}
+		</style>
+
+		<script>
+			// Create GitHub cmds for downloading missing local repos.
+			document.addEventListener('DOMContentLoaded', function () {
+				waitForElm('#activeDivLoaded').then((elm) => {
+					const website = location.host;
+					const projectsDiv = document.getElementById('activeDiv');
+					const missingReposFound = document.getElementById('missingReposFound');
+					const localsiteView = document.getElementById('localsiteView');
+					const links = projectsDiv.getElementsByTagName('a');
+
+					const repoArray = [];
+					const repoCount = {};
+					const missingRepos = [];
+					const missingRepoCount = {};
+
+					// Build repoArray and repoCount
+					for (let link of links) {
+						if (link.href.includes(location.host)) {
+							// Get links pointed at current domain (typically localhost:8887)
+							const path = new URL(link.href).pathname.split('/');
+							const folder = path[1]; // Top level parent folder
+
+							if (folder && !repoArray.includes(folder)) {
+								repoArray.push(folder);
+							}
+
+							repoCount[folder] = (repoCount[folder] || 0) + 1;
+						}
+					}
+
+					// Check for missing repos and build missingRepoCount
+					const checkRepos = async () => {
+						for (let i = 0; i < repoArray.length; i++) {
+							const folder = repoArray[i];
+							if (folder !== 'localsite') {
+								try {
+									const response = await fetch(`http://${website}/${folder}/`);
+									if (!response.ok) {
+										throw new Error('Not Found');
+									}
+									// These are the ones found
+									missingRepos.push(folder);
+									missingRepoCount[folder] = repoCount[folder];
+								} catch (error) {
+									missingRepos.push(folder);
+									missingRepoCount[folder] = repoCount[folder];
+								}
+							}
+						}
+						missingReposFound.style.display = 'block';
+						displayMissingRepos();
+						buildCloneCommands();
+						if (missingRepos.length > 0) {
+							
+						} else {
+							allReposPresent.style.display = 'block';
+						}
+						if (location.host.includes('localhost')) {
+							localsiteView.style.display = 'block';
+						}
+					};
+
+					// Display missing repos
+					const displayMissingRepos = () => {
+						const missingReposDiv = document.getElementById('missingRepos');
+						let html = '<ul>';
+						for (let folder of missingRepos) {
+							html += `<li><a href="https://github.com/modelearth/${folder}">https://github.com/modelearth/${folder}</a> (Links: ${missingRepoCount[folder]})</li>`;
+						}
+						html += '</ul>';
+						missingReposDiv.innerHTML = html;
+					};
+
+					// Build and display clone commands
+					const buildCloneCommands = () => {
+						let githubCloneCmds = '';
+						for (let folder of missingRepos) {
+							githubCloneCmds += `git clone https://github.com/modelearth/${folder} ${folder} &&\r`;
+						}
+						githubCloneCmds = githubCloneCmds.slice(0, -4); // Remove the trailing " &&"
+
+						const cloneMissingReposTextbox = document.getElementById('cloneMissingRepos');
+						cloneMissingReposTextbox.value = githubCloneCmds;
+
+						const boldTitle = document.createElement('div');
+						boldTitle.className = 'bold-title';
+						boldTitle.textContent =
+							'You can run in your webroot to clone additional repos featured above.';
+						cloneMissingReposTextbox.insertAdjacentElement('beforebegin', boldTitle);
+					};
+
+					// Start the checking process
+					checkRepos();
+				});
+			});
+		</script>
+	</head>
+
+	<body>
+		<div class="content contentpadding">
+			<div id="formatMe">
+				<div id="activeDiv" class="mTable"></div>
+			</div>
+			<div id="missingReposFound" style="display: none">
+				<h2>Repos Above</h2>
+				<div id="missingRepos"></div>
+				<textarea
+					id="cloneMissingRepos"
+					rows="4"
+					cols="50"
+					style="width: 100%; max-width: 620px"
+				></textarea><br />
+			</div>
+
+			<div id="allReposPresent" style="display: none">
+				<h2>Model.earth repos</h2>
+				All repos above are present. Github source files:
+				<a href="https://github.com/ModelEarth?tab=repositories">github.com/modelearth</a>
+			</div>
+			<br />
+
+			<div id="localsiteView" style="display: none">
+				<a href="/localsite/start/steps/">Refresh your local repos</a> for the latest updates.<br /><br />
+			</div>
+		</div>
+	</body>
+</html>
