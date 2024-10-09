@@ -188,7 +188,7 @@ Pre-processed data for county industry levels, based on employment, establishmen
 
 - [Python CoLabs for GDC timeline automation - Air and Climate](/data-commons/dist/air)
 - [Observable with Data Commons](/data-commons/) - [Data Loaders How-To](/data-commons/dist/air/)
-- [Chord Chart Data Prep](/io/charts/chord/) - TO DO
+- [Chord Chart Data Prep](/io/charts/chord/) - Poorna and everyone interested
 - [International Google Data Commons API](/data-commons/) - TO DO
 
 <!--
