@@ -12,6 +12,8 @@ Some machines may not have enough memory to run conda-start.sh script. Use a new
 
 conda-start.sh references $HOME/bin/opt/anaconda3 for the conda profile. Your conda profile might be in /opt/anaconda3 (apple silicon). You can modify conda-start.sh to change the path.
 
+Another nuance when using the conda-start.sh script is that when running the conda-start.sh with python3.11, you will get an error stating that the _lzma module couldn't be found. Weirdly, when you run the conda-start.sh when using python 3.12 it did not complain. To solve the issue with python 3.11 you should brew installed xz (https://formulae.brew.sh/formula/xz) and the script will work.
+
 **For Windows**
 
 ```
