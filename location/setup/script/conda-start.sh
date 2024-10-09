@@ -30,6 +30,8 @@ elif [ -f "$HOME/anaconda3/etc/profile.d/conda.sh" ]; then
 elif [ -f "$HOME/opt/miniconda3/etc/profile.d/conda.sh" ]; then
     . "$HOME/opt/miniconda3/etc/profile.d/conda.sh"
 elif [ -f "$HOME/opt/anaconda3/etc/profile.d/conda.sh" ]; then
+    # If a conda profile isn't created in $HOME, replace below with 
+    # . "/opt/anaconda3/etc/profile.d/conda.sh"
     . "$HOME/opt/anaconda3/etc/profile.d/conda.sh"
 else
     echo "Conda initialization script not found. Please install Conda and ensure it is properly initialized."
