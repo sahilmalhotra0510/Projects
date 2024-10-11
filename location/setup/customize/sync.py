@@ -68,6 +68,22 @@ def adding_ollama_lines(phrases):
                             lines.insert(i+1, "      - '*'\n")
 
                 updated_lines = lines
+            
+            elif filename == ".github/workflows/integration-test.yml":
+                for line in lines:
+                    if "- '*'" in line:
+                        #Remove the line with the - '*'
+                        continue
+                    elif 'env:' in line:
+                        #Remove the line with the env:
+                        continue
+                    elif 'SKIP_OLLAMA_TESTS:' in line:
+                        #Remove the line with SKIP_OLLAMA_TESTS:
+                        continue
+                    else:
+                        if line.lstrip.startswith('#'):
+                            line = line.replace('#', '', 1) 
+                        updated_lines.append(line)
 
             else:
                 # Process other files as before
