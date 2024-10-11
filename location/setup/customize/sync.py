@@ -47,6 +47,7 @@ def adding_ollama_lines(phrases):
                     in_beforeEach = True
                 elif in_beforeEach:
                     if "cy.loginAdmin();" in line or "cy.visit('/');" in line:
+                        line = line.replace("\t", "", 1)
                         updated_lines.append(line)
                     elif "});" in line:
                         updated_lines.append(line)
@@ -81,6 +82,7 @@ def adding_ollama_lines(phrases):
                         #Remove the line with SKIP_OLLAMA_TESTS:
                         continue
                     else:
+                        #Uncomment commented lines
                         if line.lstrip.startswith('#'):
                             line = line.replace('#', '', 1) 
                         updated_lines.append(line)
