@@ -55,22 +55,31 @@ def adding_ollama_lines(phrases):
                 else:
                     updated_lines.append(line)
 
-            elif filename == ".github/workflows/format-backend.yaml":
-                # Check if the '- *' line exists, if not, add it under the branches in both push and pull_request
-                found_wildcard = False
-                for line in lines:
-                    if "- '*'" in line:
-                        found_wildcard = True
-                        break
-                if not found_wildcard:
-                    # Locate the branches section under 'push' and 'pull_request'
-                    for i, line in enumerate(lines):
-                        if "branches:" in line and "push" in lines[i-1]:
-                            lines.insert(i+1, "      - '*'\n")
+            # elif filename == ".github/workflows/format-backend.yaml":
+            #     # Check if the '- *' line exists, if not, add it under the branches in both push and pull_request
+            #     found_wildcard = False
+            #     for line in lines:
+            #         if "- '*'" in line:
+            #             found_wildcard = True
+            #             break
+            #     if not found_wildcard:
+            #         # Locate the branches section under 'push' and 'pull_request'
+            #         for i, line in enumerate(lines):
+            #             if "branches:" in line and "push" in lines[i-1]:
+            #                 lines.insert(i+1, "      - '*'\n")
 
-                updated_lines = lines
+            #     updated_lines = lines
+            elif filename == ".github/workflows/format-backend.yml":
+                for line in lines:
+                    # Don't include the - '*' line
+                    if "- '*'" in line:
+                        continue
+                    else:
+                        updated_lines.append(line)
             
             elif filename == ".github/workflows/integration-test.yml":
+                skip_next_lines = False # Flag to track when to start skipping lines
+                lines_to_skip = 0 # Counter for how many lines to skip
                 for line in lines:
                     if "- '*'" in line:
                         #Remove the line with the - '*'
@@ -81,10 +90,21 @@ def adding_ollama_lines(phrases):
                     elif 'SKIP_OLLAMA_TESTS:' in line:
                         #Remove the line with SKIP_OLLAMA_TESTS:
                         continue
+                    elif 'uses: actions/checkout@v4' in line:
+                        # Start skipping the next 3 lines
+                        skip_next_lines = True
+                        lines_to_skip = 3  # Set counter to 3 lines after this one
+                        updated_lines.append(line)
+                    elif skip_next_lines:
+                        if lines_to_skip > 0:
+                            lines_to_skip -= 1  # Decrement the counter
+                            continue  # Skip this line
+                        else:
+                            skip_next_lines = False  # Reset the flag after 3 lines are skipped
                     else:
                         #Uncomment commented lines
                         if line.lstrip.startswith('#'):
-                            line = line.replace('#', '', 1) 
+                            line = line.replace('# ', '', 1) 
                         updated_lines.append(line)
 
             else:
