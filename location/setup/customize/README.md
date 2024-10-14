@@ -43,15 +43,11 @@ Sync.py first checks if the file is either cypress.config.ts or chat.cy.ts and h
 - For chat.cy.ts, the beforeEach block is reverted to the previous version.
 - The code handles duplicates.
 
-Run in the root of your website to reactivate Ollama prior to syncing:
+Run in the root of your website to reactivate Ollama prior to syncing.
 
-	python projects/location/setup/customize/sync.py "projects"
+Make a fork of: [github.com/datascape/open-webui](https://github.com/datascape/open-webui)
 
-
-After completing code updates using the "projects" repo,
-make a fork of this repo: [github.com/datascape/open-webui](https://github.com/datascape/open-webui)
-
-Pull your fork locally, then run:
+Pull your fork locally, then run in your webroot to update the open-webui repo:
 
 	python projects/location/setup/customize/sync.py "open-webui"
 
