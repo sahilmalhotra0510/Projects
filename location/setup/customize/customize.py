@@ -61,17 +61,67 @@ def removing_ollama_lines(phrases):
                 elif not in_beforeEach:
                     updated_lines.append(line)
 
-            elif filename == "format-backend.yaml":
-                # Remove the '- *' line using phrases defined in file-lines.py
-                updated_lines = []
+            #Updated so that its correct now
+            elif filename == ".github/workflows/format-backend.yaml":
+                # Check if the '- *' line exists, if not, add it under the branches in both push and pull_request
+                found_wildcard = False
                 for line in lines:
-                    should_remove = False
-                    for phrase in phrase_list:
-                        if phrase in line:
-                            should_remove = True
-                            break
-                    if not should_remove:
+                    if "- '*'" in line:
+                        found_wildcard = True
+                        break
+                if not found_wildcard:
+                    # Locate the branches section under 'push' and 'pull_request'
+                    for i, line in enumerate(lines):
+                        if "branches:" in line and "push" in lines[i-1]:
+                            lines.insert(i+1, "      - '*'\n")
+
+                updated_lines = lines
+            
+            elif filename == ".github/workflows/integration-test.yml":
+                
+                # Adding the *
+                in_branches_section = False  # Flag to track when inside the branches section
+                star_exists = False  # Flag to track if '- '*' already exists
+                capture_checkout = False  # Flag to track when to append the lines after checkout@v4
+                if "branches:" in line:
+                    in_branches_section = True
+                    updated_lines.append(line)
+                elif in_branches_section:
+                    # Check for branch lines
+                    if line.strip().startswith("-"):
+                        if "'*'" in line:
+                            star_exists = True  # Set flag if '- '*' already exists
                         updated_lines.append(line)
+                    else:
+                        # We are leaving the branches section, insert '- *' if not already present
+                        if not star_exists:
+                            updated_lines.append("      - '*'\n")  # Add the '- *' after existing branches
+                        in_branches_section = False  # Exit the branches section
+                        updated_lines.append(line)  # Continue processing the rest of the file
+
+                # Adding the name: Free up disk space code
+                # Detect `checkout@v4` and add the three lines after it
+                elif 'uses: actions/checkout@v4' in line:
+                    capture_checkout = True
+                    updated_lines.append(line)  # Add the checkout@v4 line itself
+                elif capture_checkout:
+                    # Add the specified three lines after `checkout@v4`
+                    updated_lines.append("      - name: Free up Disk Space\n")
+                    updated_lines.append("        run: bash ./.github/script/free-disk-space.sh\n")
+                    capture_checkout = False  # Reset the flag after adding the lines
+                        # Detect `config:` and add the `env:` and `SKIP_OLLAMA_TESTS` lines after it
+                elif 'config:' in line:
+                    updated_lines.append(line)  # Add the config: line itself
+                    # Insert the two lines after config:
+                    updated_lines.append("        env:\n")
+                    updated_lines.append("          SKIP_OLLAMA_TESTS: 'true'\n")
+                else:
+                    for phrase in phrase_list:
+                        if stripped_line == phrase:
+                            if not line.lstrip().startswith('#'):
+                                line = f"# {line}"
+                            break
+                    updated_lines.append(line)
 
             else:
                 # For other files, add hashtags to matching lines
