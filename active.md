@@ -44,7 +44,8 @@ Select an area of interest and choose a TO DO to contribute.
 
 [Run Models Colab](/RealityStream/)
 
-TO DO: Send URL hash # parameters to our [Run Models CoLab](/RealityStream) using Anvil
+TO DO: Send URL hash # parameters to our [Run Models CoLab](/RealityStream) using a [webhook on Google Cloud (ChatGPT)](https://chatgpt.com/share/670e7002-85fc-8003-a466-9b682012f3ea)  
+Contact Loren if you interested in helping with the above or any other TO DOs.
 
 **Anvil with our CoLabs:**
 [Anvil Extras](https://anvil-extras.readthedocs.io/en/latest/guides/index.html) and [Anvil](https://anvil.works/learn/tutorials/data-science#connecting-notebooks) and [AnvilScope CoLab](https://colab.research.google.com/drive/1rlOPfOxRnfm4pTGSn3gk_MvmVF65iidF?usp=sharing) using Plotly  
