@@ -87,7 +87,7 @@ def adding_ollama_lines(phrases):
                         skip_next_lines = False  # Reset the flag after 3 lines are skipped
                 else:
                     #Uncomment commented lines
-                    if line.lstrip.startswith('#'):
+                    if line.lstrip().startswith('#'):
                         line = line.replace('# ', '', 1) 
                     updated_lines.append(line)
 

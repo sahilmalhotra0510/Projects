@@ -37,7 +37,7 @@ phrases = {
         "ollama: {}"
     ],
 
-    ".github/workflows/intergration-test.yml" : [
+    ".github/workflows/integration-test.yml" : [
         '- name: Wait for Ollama to be up',
         'timeout-minutes: 5',
         'run: |',
