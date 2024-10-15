@@ -53,13 +53,13 @@ phrases = {
 
     ],
 
-    "cypress/e2e/chat.cy.ts" : [
+    "chat.cy.ts" : [
         'env: {',
         "    SKIP_OLLAMA_TESTS: 'false'",
         '},',
     ],
 
-    "chat.cy.ts": [
+    "cypress/e2e/chat.cy.ts": [
         'beforeEach(function () {',
         "    if (Cypress.env('SKIP_OLLAMA_TESTS')) {",
         "        cy.log('Skipping all tests in the Settings suite');",
@@ -74,6 +74,10 @@ phrases = {
 
     ".github/workflows/format-backend.yaml": [
         "      - '*'"
+    ],
+
+    ".github/workflows/integration-test.yml": [
+        
     ]
 }
 
