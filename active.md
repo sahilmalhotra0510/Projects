@@ -72,7 +72,7 @@ TO DO: Send URL hash # parameters to our [Run Models CoLab](/RealityStream) usin
 [Music for Data Science](https://github.com/DreamStudioCode/music) - for [home/repo](/home/repo)
 
 **Retrieval-Interleaved Generation (RIG)**  
-Using [Google Data Commons DataGemma AI](https://ai.google.dev/gemma/docs/datagemma) - Zihan reported require paid storage or memory
+Using [Google Data Commons DataGemma AI](https://ai.google.dev/gemma/docs/datagemma) - Zihan found that a paid Google plan was needed to avoid storage/memory errors/timeouts.
 
 [Innovations in Water Purification](/evaporation-kits/innovations/) - Hyper Desalination - Content prep for RAG
 
