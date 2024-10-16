@@ -40,16 +40,13 @@ Select an area of interest and choose a TO DO to contribute. Contact Loren for d
 
 ## Google Data Commons Timelines
 
-TO DO: 
-
-[Javascript Timelines from Google Data Commons API](/data-commons/docs/data/)
-[Python pull from Google Data Commons API](/data-commons/docs/data/)
+TO DO: [Hosting DataCommons locally with Flask](/localsite/info/data/datacommons)
+IN PROGRESS: [Javascript Timelines from Google Data Commons API](/data-commons/docs/data/) - Mehul, Aishwrya, Vishnupriya
+IN PROGRESS: [Python pull from Google Data Commons API](/data-commons/docs/data/) - Zihan, Bhavna
 
 <!--
 [Observable Framework Dashboard for UN Goals](https://observablehq.com/framework/) - with our .csv timelines and DuckDB Parquet impact files
 -->
-
-[DataGemma AI](https://ai.google.dev/gemma/docs/datagemma) - Ask: "List of DCID for water UN Goal timelines and Places"
 
 **Data Commons Visualization Projects**
 
@@ -70,6 +67,8 @@ TO DO: Send URL hash # parameters to our [Run Models CoLab](/RealityStream) usin
 
 **Anvil with our CoLabs:**
 [Anvil Extras](https://anvil-extras.readthedocs.io/en/latest/guides/index.html) and [Anvil](https://anvil.works/learn/tutorials/data-science#connecting-notebooks) and [AnvilScope CoLab](https://colab.research.google.com/drive/1rlOPfOxRnfm4pTGSn3gk_MvmVF65iidF?usp=sharing) using Plotly  
+
+Vindhya
 
 <!--
 - [StreamLit hosting within Open WebUI](https://github.com/streamlit/streamlit/issues/969)
