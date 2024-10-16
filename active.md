@@ -77,19 +77,20 @@ Vindhya is joining us Oct 24
 
 [For Everybody's Home Page](../home) 
 
-TO DO:
+TO DO: Javascript Langchain  
 
-Apply langchain.js to any GitHub repo in our [home repo folder](../home/repo) using API
+[Our Langchain Repo](https://github.com/modelearth/langchain/) - Dhananjay and Pranathi  
+Apply langchain.js to any GitHub repo in our [home repo folder](../home/repo) using API. Add field for entering Github account and repo name.
 
 **LangChain.JS:** Setup javascript for Retrieval Augmented Generation (RAG) using a static Javascript page with [LangChain.js](https://api.js.langchain.com), an API for a [supported LLM](https://api.js.langchain.com/interfaces/_langchain_openai.OpenAIClient.Beta.VectorStores.FileBatches.FileBatchCreateParams.StaticChunkingStrategyRequestParam.Static.html) like OpenAI, and data from a Google Sheet or Github Repo<!--DataStax Astra DB-->.  [And with LangChain removed](https://www.octomind.dev/blog/why-we-no-longer-use-langchain-for-building-our-ai-agents)
 
 [API Storage storage for LLM APIs using javascript](/localsite/tools/storage/api/)
-[Our Langchain Repo](https://github.com/modelearth/langchain/) - Pranathi
 
-IN PROGRESS: Pradeep and Pranoy
+---
+<br>IN PROGRESS: Python Langchain  
 
 **Python Retrieval Augmented Generation (RAG)**
-[Conversational RAG sample for 10 LLMs](https://python.langchain.com/docs/tutorials/qa_chat_history/)  
+[Conversational RAG for 10 LLMs](https://python.langchain.com/docs/tutorials/qa_chat_history/) - Pradeep and Pranoy  
 
 Pradeep: Pinecone on AWS free 2 GB max
 Pranoy: DocArray in memory Vecto Store (database)
