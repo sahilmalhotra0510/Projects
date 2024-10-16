@@ -42,7 +42,7 @@ Start by [installing a couple of our Website repos locally](../localsite/start/s
 
 ## Google Data Commons Timelines
 
-TO DO: [Hosting DataCommons locally with Flask](/localsite/info/data/datacommons)
+TO DO: [Hosting DataCommons locally with Flask](/localsite/info/data/datacommons) - Vishnupriya and our GDC team
 IN PROGRESS: [Javascript Timelines from Google Data Commons API](/data-commons/docs/data/) - Mehul, Aishwrya, Vishnupriya
 IN PROGRESS: [Python pull from Google Data Commons API](/data-commons/docs/data/) - Zihan, Bhavna
 
@@ -65,9 +65,9 @@ IN PROGRESS: [Python pull from Google Data Commons API](/data-commons/docs/data/
 TO DO: Send URL hash # parameters to our [Run Models CoLab](/RealityStream) using a [webhook on Google Cloud (ChatGPT)](https://chatgpt.com/share/670e7002-85fc-8003-a466-9b682012f3ea) - Abhishek L
 
 **Anvil with our CoLabs:**
-[Anvil Extras](https://anvil-extras.readthedocs.io/en/latest/guides/index.html) and [Anvil](https://anvil.works/learn/tutorials/data-science#connecting-notebooks) and [AnvilScope CoLab](https://colab.research.google.com/drive/1rlOPfOxRnfm4pTGSn3gk_MvmVF65iidF?usp=sharing) using Plotly  
+[Anvil Extras](https://anvil-extras.readthedocs.io/en/latest/guides/index.html) and [Anvil](https://anvil.works/learn/tutorials/data-science#connecting-notebooks) and [AnvilScope CoLab](https://colab.research.google.com/drive/1rlOPfOxRnfm4pTGSn3gk_MvmVF65iidF?usp=sharing) using Plotly - Soham
 
-Vindhya
+Vindhya is joining us Oct 24
 
 <!--
 - [StreamLit hosting within Open WebUI](https://github.com/streamlit/streamlit/issues/969)
