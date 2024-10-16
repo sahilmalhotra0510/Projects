@@ -9,9 +9,7 @@ medium.com subscription needed
 	https://bhavikjikadara.medium.com/how-to-install-open-webui-without-docker-33eedbda9b96
 -->
 
-### Active Projects
 
-[Install Website and Modules](../localsite/start/steps/) 
 
 <!--
 - [Observable Data Commons](/data-commons/) - [Open WebUI](location/) - [Storyboard Generator](/data-pipeline/research) - [Moonshots](/community/projects/)
@@ -33,10 +31,14 @@ Create a developer account in [Omdena.com](https://omdena.com) and help us creat
 -->
 
 
-# Choose your own Adventure
+# Active Projects
+
+
+<!--# Choose your own Adventure -->
 
 Select an area of interest and choose a TO DO to contribute. Contact Loren for details.
 
+Start by [installing a couple of our Website repos locally](../localsite/start/steps/) 
 
 ## Google Data Commons Timelines
 
@@ -48,14 +50,11 @@ IN PROGRESS: [Python pull from Google Data Commons API](/data-commons/docs/data/
 [Observable Framework Dashboard for UN Goals](https://observablehq.com/framework/) - with our .csv timelines and DuckDB Parquet impact files
 -->
 
-**Data Commons Visualization Projects**
-
-[Python CoLabs for GDC timeline automation - Air and Climate](/data-commons/dist/air)
+**More Data Commons Visualization Projects**
 [Observable with Data Commons](/data-commons/) - [Data Loaders How-To](/data-commons/dist/air/)
-[Chord Chart Data Prep](/io/charts/chord/) - Poorna and everyone interested
-[International Google Data Commons API](/data-commons/) - TO DO
-
 <!--
+[Python CoLabs for GDC timeline automation - Air and Climate](/data-commons/dist/air)
+
 [Kargil's notes](https://github.com/modelearth/Observables-DataLoader/tree/master/docs)
 -->
 
@@ -114,11 +113,13 @@ Contributors: Gary, Satya, Himanshu, Sahil
 
 [Our little trade flow Sankey](/OpenFootprint/trade/) - [Big Sankey](https://sankey.theshiftproject.org/) - [Our Fork with python 3.10](https://github.com/ModelEarth/Mapping-global-ghg-emissions) and [bug resolved](https://github.com/baptiste-an/Mapping-global-ghg-emissions/issues/2)
 
+TO DO: [Chord Chart Data Prep](/io/charts/chord/) <!-- Poorna and everyone interested -->
+
 TO DO: [Python to pull Harmonized Code (HS) lookups into Supabase](/OpenFootprint/harmonized-system/) - Initial work by Wenjie (and Chen)
 
-[Sankey Industry eChart](/useeio.js/charts/echarts/sankey-nodeAlign-left.html) - eCharts uses a common echarts.min.js file which we'll load in [Feed Viewer](/feed/view)
+TO DO: [Sankey Industry eChart](/OpenFootprint/charts/echarts/sankey-nodeAlign-left.html) - eCharts uses a common echarts.min.js file which we'll load in [Feed Viewer](/feed/view)
 
-[Python - Finalize our All the Places data by State and Zip](/places)
+TO DO: [Python - Finalize our All the Places data by State and Zip](/places)
 
 
 ## US EPA State Impacts
