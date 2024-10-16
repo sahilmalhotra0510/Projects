@@ -6,6 +6,7 @@ import re
 import os
 
 file_lines = importlib.import_module("file-lines")
+importlib.reload(file_lines)
 phrases = file_lines.phrases
 
 def removing_ollama_lines(phrases):
