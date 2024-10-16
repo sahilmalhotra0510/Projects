@@ -35,17 +35,38 @@ Create a developer account in [Omdena.com](https://omdena.com) and help us creat
 
 # Choose your own Adventure
 
-Select an area of interest and choose a TO DO to contribute.
+Select an area of interest and choose a TO DO to contribute. Contact Loren for details.
 
 
+## Google Data Commons Timelines
 
+TO DO: 
+
+[Javascript Timelines from Google Data Commons API](/data-commons/docs/data/)
+[Python pull from Google Data Commons API](/data-commons/docs/data/)
+
+<!--
+[Observable Framework Dashboard for UN Goals](https://observablehq.com/framework/) - with our .csv timelines and DuckDB Parquet impact files
+-->
+
+[DataGemma AI](https://ai.google.dev/gemma/docs/datagemma) - Ask: "List of DCID for water UN Goal timelines and Places"
+
+**Data Commons Visualization Projects**
+
+[Python CoLabs for GDC timeline automation - Air and Climate](/data-commons/dist/air)
+[Observable with Data Commons](/data-commons/) - [Data Loaders How-To](/data-commons/dist/air/)
+[Chord Chart Data Prep](/io/charts/chord/) - Poorna and everyone interested
+[International Google Data Commons API](/data-commons/) - TO DO
+
+<!--
+[Kargil's notes](https://github.com/modelearth/Observables-DataLoader/tree/master/docs)
+-->
 
 ## RealityStream ML
 
 [Run Models Colab](/RealityStream/)
 
-TO DO: Send URL hash # parameters to our [Run Models CoLab](/RealityStream) using a [webhook on Google Cloud (ChatGPT)](https://chatgpt.com/share/670e7002-85fc-8003-a466-9b682012f3ea)  
-Contact Loren if you interested in helping with the above or any other TO DOs.
+TO DO: Send URL hash # parameters to our [Run Models CoLab](/RealityStream) using a [webhook on Google Cloud (ChatGPT)](https://chatgpt.com/share/670e7002-85fc-8003-a466-9b682012f3ea) - Abhishek L
 
 **Anvil with our CoLabs:**
 [Anvil Extras](https://anvil-extras.readthedocs.io/en/latest/guides/index.html) and [Anvil](https://anvil.works/learn/tutorials/data-science#connecting-notebooks) and [AnvilScope CoLab](https://colab.research.google.com/drive/1rlOPfOxRnfm4pTGSn3gk_MvmVF65iidF?usp=sharing) using Plotly  
@@ -118,24 +139,17 @@ TO DO: Pull into SQL DuckDB
 
 **BuildingTransparency and Open Footprint labels**
 
+Bhavna, Yash
+
 - [Use our state map filter](#geoview=country) with colors for [new USEEIO reporting maps](https://figshare.com/collections/USEEIO_State_Models_v1_0_-_Supporting_Figures/7041473)
 - [BuildingTransparency - Product Impact Profiles by State and Zip](/io/template/feed/) - TO DO <!--Ronan-->
 - [BuildingTransparency - API Aggregates of States and Countries](/io/template/product/) - Initially Luwei
 - [BuildingTransparency - JSON file pull for impact templates](/io/template/product/)
 
-## Google Data Commons Timelines
-
-[Javascript Timelines from Google Data Commons API](/data-commons/docs/data/)
-[Python pull from Google Data Commons API](/data-commons/docs/data/)
-
-<!--
-[Observable Framework Dashboard for UN Goals](https://observablehq.com/framework/) - with our .csv timelines and DuckDB Parquet impact files
--->
-
-[DataGemma AI](https://ai.google.dev/gemma/docs/datagemma) - Ask: "List of DCID for water UN Goal timelines and Places"
-
 
 ## OpenWebUI LLM Location Data
+
+IN PROGRESS - Dhananjay
 
 [OpenWebUI](/projects/location/setup/customize/) - Reactivates Ollama for Sync, Docker and location addons
 
@@ -188,7 +202,7 @@ Pre-processed data for county industry levels, based on employment, establishmen
 ## ML with Python and Google Data Commons
 
 - [RealityStream](/RealityStream/) - Machine Learning Classification Models - Ivy, Kelvin and many more - TO DO
-- [Process Industry NAICS by Zip Code](/data-pipeline/industries/naics) - TO DO
+- [Process Industry NAICS by Zip Code](/community-zipcodes/mail) - DONE Yunbo
 - [ML for Community Forecasting Timelines](../data-pipeline/timelines/) - Zip code pipeline TO DO
 - [Open Data Panels - YAML Display](/OpenFootprint) - Microsoft Plug and Play - TO DO
 
@@ -200,18 +214,6 @@ Pre-processed data for county industry levels, based on employment, establishmen
 - [CrewAI+Ollama integration](https://lightning.ai/lightning-ai/studios/ai-agents-powered-by-crewai) within our [Open WebUI fork](location)
 - [Flowsa RStudio - API to JSON](/localsite/info/data/flowsa/)
 -->
-
-**Observable Framework + GDC Visualization Projects**
-
-- [Python CoLabs for GDC timeline automation - Air and Climate](/data-commons/dist/air)
-- [Observable with Data Commons](/data-commons/) - [Data Loaders How-To](/data-commons/dist/air/)
-- [Chord Chart Data Prep](/io/charts/chord/) - Poorna and everyone interested
-- [International Google Data Commons API](/data-commons/) - TO DO
-
-<!--
-[Kargil's notes](https://github.com/modelearth/Observables-DataLoader/tree/master/docs)
--->
-
 
 - [Update Farm Fresh Data pull](/community-data/process/python/farmfresh/) - Bhavna - DONE
 - [Push EPA date to Google Data Commons API](https://docs.datacommons.org/api/)
