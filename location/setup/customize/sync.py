@@ -27,8 +27,10 @@ def adding_ollama_lines(phrases):
         updated_lines = []
         skip_env_block = False
         in_beforeEach = False
+        skip_next_line = False  # Flag to skip the line after detecting a blank line before Free up Disk Space
+        lines_to_skip = 0 # Counter for how many lines to skip
 
-        for line in lines:
+        for i, line in enumerate(lines):
             stripped_line = line.strip()
             if filename == "cypress.config.ts":
                 if "env: {" in line:
@@ -63,8 +65,7 @@ def adding_ollama_lines(phrases):
                     updated_lines.append(line)
             
             elif filename == ".github/workflows/integration-test.yml":
-                skip_next_lines = False # Flag to track when to start skipping lines
-                lines_to_skip = 0 # Counter for how many lines to skip
+
                 if "- '*'" in line:
                     #Remove the line with the - '*'
                     continue
@@ -74,21 +75,29 @@ def adding_ollama_lines(phrases):
                 elif 'SKIP_OLLAMA_TESTS:' in line:
                     #Remove the line with SKIP_OLLAMA_TESTS:
                     continue
-                elif 'uses: actions/checkout@v4' in line:
-                    # Start skipping the next 3 lines
-                    skip_next_lines = True
-                    lines_to_skip = 3  # Set counter to 3 lines after this one
-                    updated_lines.append(line)
-                elif skip_next_lines:
-                    if lines_to_skip > 0:
-                        lines_to_skip -= 1  # Decrement the counter
-                        continue  # Skip this line
-                    else:
-                        skip_next_lines = False  # Reset the flag after 3 lines are skipped
+                # Skip the blank line and the '- name: Free up Disk Space' line
+                elif skip_next_line:
+                    if line.strip() == "":
+                        continue  # Skip the blank line
+                    elif "- name: Free up Disk Space" in line:
+                        skip_next_line = False  # Reset the flag after skipping this line
+                        continue  # Skip the 'Free up Disk Space' line
+
+                # Detect the blank line followed by `- name: Free up Disk Space`
+                elif line.strip() == "" and i + 1 < len(lines) and "- name: Free up Disk Space" in lines[i + 1]:
+                    skip_next_line = True
+                    continue  # Skip the blank line
+
+                elif 'run: bash ./.github/script/free-disk-space.sh' in line:
+                    continue
+
                 else:
                     #Uncomment commented lines
-                    if line.lstrip().startswith('#'):
-                        line = line.replace('# ', '', 1) 
+                    for phrase in phrase_list:
+                        if stripped_line == phrase:
+                            if line.lstrip().startswith('#'):
+                                line = line.replace('#', '', 1)
+                            break
                     updated_lines.append(line)
 
             else:

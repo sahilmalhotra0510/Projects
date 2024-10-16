@@ -50,7 +50,6 @@ phrases = {
         '- name: Preload Ollama model',
         'run: |',
         '  docker exec ollama ollama pull qwen:0.5b-chat-v1.5-q2_K',
-
     ],
 
     "chat.cy.ts" : [
