@@ -56,21 +56,27 @@ Contact Loren if you interested in helping with the above or any other TO DOs.
 
 ## Everybody's Home (Langchain from Repos)<!-- RIGs from Repos-->
 
-[For Everybody's Home Page](../home) using [repo file API](../home/repo)
+[For Everybody's Home Page](../home) 
 
-**LangChain:** Setup javascript for Retrieval Augmented Generation (RAG) using a static Javascript page with [LangChain.js](https://api.js.langchain.com), an API for a [supported LLM](https://api.js.langchain.com/interfaces/_langchain_openai.OpenAIClient.Beta.VectorStores.FileBatches.FileBatchCreateParams.StaticChunkingStrategyRequestParam.Static.html) like OpenAI, and data from a Google Sheet or Github Repo<!--DataStax Astra DB-->.  [And with LangChain removed](https://www.octomind.dev/blog/why-we-no-longer-use-langchain-for-building-our-ai-agents)
+TO DO:
+
+Apply langchain.js to any GitHub repo in our [home repo folder](../home/repo) using API
+
+**LangChain.JS:** Setup javascript for Retrieval Augmented Generation (RAG) using a static Javascript page with [LangChain.js](https://api.js.langchain.com), an API for a [supported LLM](https://api.js.langchain.com/interfaces/_langchain_openai.OpenAIClient.Beta.VectorStores.FileBatches.FileBatchCreateParams.StaticChunkingStrategyRequestParam.Static.html) like OpenAI, and data from a Google Sheet or Github Repo<!--DataStax Astra DB-->.  [And with LangChain removed](https://www.octomind.dev/blog/why-we-no-longer-use-langchain-for-building-our-ai-agents)
 
 [API Storage storage for LLM APIs using javascript](/localsite/tools/storage/api/)
 [Our Langchain Repo](https://github.com/modelearth/langchain/) - Pranathi
 
+IN PROGRESS: Pradeep and Pranoy
+
 **Python Retrieval Augmented Generation (RAG)**
 [Conversational RAG sample for 10 LLMs](https://python.langchain.com/docs/tutorials/qa_chat_history/)  
 
+Pradeep: Pinecone on AWS free 2 GB max
+Pranoy: DocArray in memory Vecto Store (database)
 
 [Google Notebook LM](https://notebooklm.google)
 
-[AI Requests Visualization](/requests/) - for Storyboards, Meal Planning and Project Visualization  
-[Music for Data Science](https://github.com/DreamStudioCode/music) - for [home/repo](/home/repo)
 
 **Retrieval-Interleaved Generation (RIG)**  
 Using [Google Data Commons DataGemma AI](https://ai.google.dev/gemma/docs/datagemma) - Zihan found that a paid Google plan was needed to avoid storage/memory errors/timeouts.
@@ -80,13 +86,15 @@ Using [Google Data Commons DataGemma AI](https://ai.google.dev/gemma/docs/datage
 
 ## International Trade Flow
 
+TO DO: Processing Exiobase in CoLabs, displaying with javascript
+
 Contributors: Gary, Satya, Himanshu, Sahil
 
 [International Trade Flow SQL Data Prep](/OpenFootprint/trade) - Exiobase Colab and charts
 
 [Our little trade flow Sankey](/OpenFootprint/trade/) - [Big Sankey](https://sankey.theshiftproject.org/) - [Our Fork with python 3.10](https://github.com/ModelEarth/Mapping-global-ghg-emissions) and [bug resolved](https://github.com/baptiste-an/Mapping-global-ghg-emissions/issues/2)
 
-[Python to pull Harmonized Code (HS) lookups into Supabase](/OpenFootprint/harmonized-system/) - Chen and Wenjie
+TO DO: [Python to pull Harmonized Code (HS) lookups into Supabase](/OpenFootprint/harmonized-system/) - Initial work by Wenjie (and Chen)
 
 [Sankey Industry eChart](/useeio.js/charts/echarts/sankey-nodeAlign-left.html) - eCharts uses a common echarts.min.js file which we'll load in [Feed Viewer](/feed/view)
 
@@ -95,10 +103,12 @@ Contributors: Gary, Satya, Himanshu, Sahil
 
 ## US EPA State Impacts
 
+TO DO: Pull into SQL DuckDB
+
 [Javascript updates for US EPA impact reports](/useeio.js/footprint/)  
 [React Team - Mosaic column checkboxes](/io/charts)  
 [React Team - Commodity Totals](/localsite/info/data/totals/) in [Jobs Reports](/localsite/info/#indicators=JOBS)
-
+[Impact Label Pipeline](/apps/impact) - Starting point for duplicating US EPA RStudio in python
 
 ## Open Footprints YAML Display
 
@@ -106,6 +116,12 @@ Contributors: Gary, Satya, Himanshu, Sahil
 
 [Food Nutrition Labels](/data-commons/docs/food) - Shali and Wenwei (Stella)
 
+**BuildingTransparency and Open Footprint labels**
+
+- [Use our state map filter](#geoview=country) with colors for [new USEEIO reporting maps](https://figshare.com/collections/USEEIO_State_Models_v1_0_-_Supporting_Figures/7041473)
+- [BuildingTransparency - Product Impact Profiles by State and Zip](/io/template/feed/) - TO DO <!--Ronan-->
+- [BuildingTransparency - API Aggregates of States and Countries](/io/template/product/) - Initially Luwei
+- [BuildingTransparency - JSON file pull for impact templates](/io/template/product/)
 
 ## Google Data Commons Timelines
 
@@ -196,16 +212,17 @@ Pre-processed data for county industry levels, based on employment, establishmen
 [Kargil's notes](https://github.com/modelearth/Observables-DataLoader/tree/master/docs)
 -->
 
-**BuildingTransparency and Open Footprint labels**
 
-- [Use our state map filter](#geoview=country) with colors for [new USEEIO reporting maps](https://figshare.com/collections/USEEIO_State_Models_v1_0_-_Supporting_Figures/7041473)
-- [BuildingTransparency - Product Impact Profiles by State and Zip](/io/template/feed/) - TO DO <!--Ronan-->
-- [BuildingTransparency - API Aggregates of States and Countries](/io/template/product/) - Initially Luwei
-- [BuildingTransparency - JSON file pull for impact templates](/io/template/product/)
 - [Update Farm Fresh Data pull](/community-data/process/python/farmfresh/) - Bhavna - DONE
 - [Push EPA date to Google Data Commons API](https://docs.datacommons.org/api/)
 
-**Storyboard Generator - Images and Video for Request Visualization**
+## Storyboard Generator
+
+Images and Videos from .CSV prompts 
+for Interactive presentation backgrounds, Request Visualization
+
+- [AI Requests Visualization](/requests/) - for Storyboards, Meal Planning and Project Visualization  
+- [Music for Data Science](https://github.com/DreamStudioCode/music) - for [home/repo](/home/repo)
 
 - [Image Gallery (JQuery) and Video (Leonardo)](/data-pipeline/research/stream)
 - [Our Storyboard Generator](/data-pipeline/research/)
@@ -213,17 +230,19 @@ Pre-processed data for county industry levels, based on employment, establishmen
   <!-- [Kishor's Repo](https://github.com/mannurkishorreddy/streamlit-replicate-img-app)-->
   <!--- [Image Gallery (React)](/react-gallery/view/) - Anthony -->
 
-**React, Tabulator, Industry Timelines**
+
+## Tabulator, Industry Timelines, SQLite in Browser
 
 - [Tabulator - Merge in industry year rows using Javascript (1-3)](/data-pipeline/timelines/tabulator/) - DONE<!--Rupesh, Vadlamudi-->
 - [Tabulator - Merge in titles using Javascript (4)](/data-pipeline/timelines/tabulator/) - DONE <!--Dinesh, Fanyi, Rupesh-->
 - [Steps for SQLite in Browser](/data-pipeline/timelines/sqlite/phiresky/) - [Example (Runs SQL)](https://phiresky.github.io/blog/2021/hosting-sqlite-databases-on-github-pages/)
-- [Impact Label Pipeline](/apps/impact) - Too optimize and change inputs
+
 
 <!-- - [React Team - Impact Side Navigation](/io/charts/inflow-outflow/#set=prosperity&indicators=VADD,JOBS) -->
 
+## Moonshot Challenges
 
-**Moonshot Challenges** - [Take the leap](/community/projects/)
+Our most challenging projects - [Take the leap](/community/projects/)
 <br>
 
 <div id="activeDivLoaded"></div>
