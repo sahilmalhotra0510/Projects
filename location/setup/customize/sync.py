@@ -28,6 +28,7 @@ def adding_ollama_lines(phrases):
         skip_env_block = False
         in_beforeEach = False
         skip_next_line = False  # Flag to skip the line after detecting a blank line before Free up Disk Space
+        skip_next_line_OLLAMA = False  # Flag to skip the next line if `env:` is found with SKIP_OLLAMA_TESTS
         lines_to_skip = 0 # Counter for how many lines to skip
 
         for i, line in enumerate(lines):
@@ -69,12 +70,18 @@ def adding_ollama_lines(phrases):
                 if "- '*'" in line:
                     #Remove the line with the - '*'
                     continue
-                elif 'env:' in line:
-                    #Remove the line with the env:
-                    continue
-                elif 'SKIP_OLLAMA_TESTS:' in line:
-                    #Remove the line with SKIP_OLLAMA_TESTS:
-                    continue
+
+                # Detect `env:` followed by `SKIP_OLLAMA_TESTS: 'true'`
+                elif 'env:' in line and i + 1 < len(lines) and "SKIP_OLLAMA_TESTS: 'true'" in lines[i + 1]:
+                    skip_next_line_OLLAMA = True
+                    continue  # Skip the `env:` line
+
+                # Skip the `env:` and `SKIP_OLLAMA_TESTS` lines
+                elif skip_next_line_OLLAMA:
+                    if "SKIP_OLLAMA_TESTS: 'true'" in line:
+                        skip_next_line_OLLAMA = False  # Reset the flag after skipping this line
+                        continue  # Skip the `SKIP_OLLAMA_TESTS:` line
+                
                 # Skip the blank line and the '- name: Free up Disk Space' line
                 elif skip_next_line:
                     if line.strip() == "":
