@@ -13,8 +13,9 @@ OpenWebUI is a potential starting point for any AI interface. One of our goals i
 
 These scripts are developed in [github.com/ModelEarth/projects](https://github.com/ModelEarth/projects) (which is a fork of open-webui)
 
-The files included in file-lines.py are listed in the following Pull Request (PR):
-[github.com/ModelEarth/projects/pull/7](https://github.com/ModelEarth/projects/pull/7)
+https://github.com/ModelEarth/projects-delete/pull/7
+
+The files included in file-lines.py to make Ollama external for Google Cloud are listed in the following Pull Request (PR): [github.com/ModelEarth/projects-delete/pull/7](https://github.com/ModelEarth/projects-delete/pull/7)
 
 ## Customize.py
 
