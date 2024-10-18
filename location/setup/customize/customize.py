@@ -127,6 +127,10 @@ def removing_ollama_lines(phrases):
                             break
                     updated_lines.append(line)
 
+            elif filename == "docker-compose.api.yaml":
+                line = f"# {line}"
+                updated_lines.append(line)
+
             else:
                 # For other files, add hashtags to matching lines
                 for phrase in phrase_list:

@@ -111,6 +111,9 @@ def adding_ollama_lines(phrases):
                                 line = line.replace('#', '', 1)
                             break
                     updated_lines.append(line)
+            
+            elif filename == "docker-compose.api.yaml":
+                updated_lines.append(line[2:])
 
             else:
                 # Process other files as before
