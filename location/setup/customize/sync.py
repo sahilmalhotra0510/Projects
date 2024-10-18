@@ -44,30 +44,35 @@ def adding_ollama_lines(phrases):
                 else:
                     updated_lines.append(line)
 
-            elif filename == "chat.cy.ts":
+            elif filename == "cypress/e2e/chat.cy.ts":
                 if "beforeEach(function ()" in line:
                     updated_lines.append("\tbeforeEach(() => {\n")
                     in_beforeEach = True
                 elif in_beforeEach:
                     if "cy.loginAdmin();" in line or "cy.visit('/');" in line:
                         line = line.replace("\t", "", 1)
-                        updated_lines.append(line)
+                        if "cy.loginAdmin();" in line:
+                            updated_lines.append("		// Login as the admin user\n")
+                            updated_lines.append("		cy.loginAdmin();\n")
+                        elif "cy.visit('/');" in line:
+                            updated_lines.append("		// Visit the home page\n")
+                            updated_lines.append("		cy.visit('/');\n")
                     elif "});" in line:
                         updated_lines.append(line)
                         in_beforeEach = False
                 else:
                     updated_lines.append(line)
 
-            elif filename == ".github/workflows/format-backend.yml":
+            elif filename == ".github/workflows/format-backend.yaml":
                 # Don't include the - '*' line
-                if "- '*'" in line:
+                if "*" in line:
                     continue
                 else:
                     updated_lines.append(line)
             
             elif filename == ".github/workflows/integration-test.yml":
 
-                if "- '*'" in line:
+                if "      - '*'" in line:
                     #Remove the line with the - '*'
                     continue
 
