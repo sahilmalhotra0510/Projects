@@ -118,9 +118,9 @@ def adding_ollama_lines(phrases):
             else:
                 # Process other files as before
                 for phrase in phrase_list:
-                    if stripped_line == phrase:
+                    if phrase in stripped_line:
                         if line.lstrip().startswith('#'):
-                            line = line.replace('#', '', 1)
+                            line = line.replace('# ', '', 1)
                         break
                 updated_lines.append(line)
 

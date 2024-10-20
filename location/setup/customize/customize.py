@@ -38,7 +38,7 @@ def removing_ollama_lines(phrases):
             # Check if env block already exists
             env_block_exists = any("env:" in line for line in lines)
 
-        for line in lines:
+        for i, line in enumerate(lines):
             stripped_line = line.strip()
 
             if filename == "cypress.config.ts":
@@ -129,6 +129,9 @@ def removing_ollama_lines(phrases):
 
             elif filename == "docker-compose.api.yaml":
                 line = f"# {line}"
+                updated_lines.append(line)
+            
+            elif filename == "docker-compose.yaml" and "volumes:" in line and "- open-webui:/app/backend/data" in lines[i+1]:
                 updated_lines.append(line)
 
             else:
