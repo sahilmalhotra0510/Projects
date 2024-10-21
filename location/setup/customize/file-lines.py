@@ -16,28 +16,28 @@ phrases = {
     ],
     "docker-compose.yaml": [
         'ollama:',
-        '  volumes:',
-        '    - ollama:/root/.ollama',
-        '  container_name: ollama',
-        '  pull_policy: always',
-        '  tty: true',
-        '  restart: unless-stopped',
-        '  image: ollama/ollama:${OLLAMA_DOCKER_TAG-latest}',
+        'volumes:',
+        '- ollama:/root/.ollama',
+        'container_name: ollama',
+        'pull_policy: always',
+        'tty: true',
+        'restart: unless-stopped',
+        'image: ollama/ollama:${OLLAMA_DOCKER_TAG-latest}',
 
         'args:',
-        "  OLLAMA_BASE_URL: '/ollama'",
+        "OLLAMA_BASE_URL: '/ollama'",
 
         "depends_on:",
-        "  - ollama",
+        "- ollama",
 
         "environment:",
-        "  - 'OLLAMA_BASE_URL=http://ollama:11434'",
-        "  - 'WEBUI_SECRET_KEY='",
+        "- 'OLLAMA_BASE_URL=http://ollama:11434'",
+        "- 'WEBUI_SECRET_KEY='",
 
         "ollama: {}"
     ],
 
-    ".github/workflows/intergration-test.yml" : [
+    ".github/workflows/integration-test.yml" : [
         '- name: Wait for Ollama to be up',
         'timeout-minutes: 5',
         'run: |',
@@ -50,16 +50,15 @@ phrases = {
         '- name: Preload Ollama model',
         'run: |',
         '  docker exec ollama ollama pull qwen:0.5b-chat-v1.5-q2_K',
-
     ],
 
-    "cypress/e2e/chat.cy.ts" : [
+    "chat.cy.ts" : [
         'env: {',
         "    SKIP_OLLAMA_TESTS: 'false'",
         '},',
     ],
 
-    "chat.cy.ts": [
+    "cypress/e2e/chat.cy.ts": [
         'beforeEach(function () {',
         "    if (Cypress.env('SKIP_OLLAMA_TESTS')) {",
         "        cy.log('Skipping all tests in the Settings suite');",
@@ -74,6 +73,10 @@ phrases = {
 
     ".github/workflows/format-backend.yaml": [
         "      - '*'"
+    ],
+
+    ".github/workflows/integration-test.yml": [
+        
     ]
 }
 
