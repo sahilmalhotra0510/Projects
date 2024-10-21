@@ -2,6 +2,10 @@ Our meetups are [Wednesdays at 11 AM EDT](/io/coders/) and [Fridays at 6 PM EDT]
 
 ---
 
+RIG
+https://colab.research.google.com/drive/1eLtHOR6e3lAUVijUJ56VMaiTU6hA9enc?usp=sharing
+
+
 <!--
 medium.com subscription needed
 
