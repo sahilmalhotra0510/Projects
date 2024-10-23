@@ -1,10 +1,5 @@
 Our meetups are [Wednesdays at 11 AM EDT](/io/coders/) and [Fridays at 6 PM EDT](/io/coders) and [Sundays at 11 PM EDT](/io/coders/).
 
----
-
-RIG
-https://colab.research.google.com/drive/1eLtHOR6e3lAUVijUJ56VMaiTU6hA9enc?usp=sharing
-
 
 <!--
 medium.com subscription needed
@@ -103,7 +98,7 @@ Pranoy: DocArray in memory Vecto Store (database)
 
 
 **Retrieval-Interleaved Generation (RIG)**  
-Using [Google Data Commons DataGemma AI](https://ai.google.dev/gemma/docs/datagemma) - Zihan found that a paid Google plan was needed to avoid storage/memory errors/timeouts.
+Using [Google Data Commons DataGemma AI](https://ai.google.dev/gemma/docs/datagemma) - Zihan found that a paid Google plan was needed to avoid storage/memory errors/timeouts. Here's our [RIG CoLab](https://colab.research.google.com/drive/1eLtHOR6e3lAUVijUJ56VMaiTU6hA9enc?usp=sharing).
 
 [Innovations in Water Purification](/evaporation-kits/innovations/) - Hyper Desalination - Content prep for RAG
 
