@@ -81,9 +81,11 @@ TO DO: Javascript Langchain
 [Our Langchain Repo](https://github.com/modelearth/langchain/) - Dhananjay and Pranathi  
 Apply langchain.js to any GitHub repo in our [home repo folder](../home/repo) using API. Add field for entering Github account and repo name.
 
-**LangChain.JS:** Setup javascript for Retrieval Augmented Generation (RAG) using a static Javascript page with [LangChain.js](https://api.js.langchain.com), an API for a [supported LLM](https://api.js.langchain.com/interfaces/_langchain_openai.OpenAIClient.Beta.VectorStores.FileBatches.FileBatchCreateParams.StaticChunkingStrategyRequestParam.Static.html) like OpenAI, and data from a Google Sheet or Github Repo<!--DataStax Astra DB-->.  [And with LangChain removed](https://www.octomind.dev/blog/why-we-no-longer-use-langchain-for-building-our-ai-agents)
+**LangChain.JS:** in our [Planet repo](https://github.com/modelearth/planet/)  
+Setup javascript for Retrieval Augmented Generation (RAG) using a static Javascript page with [LangChain.js](https://api.js.langchain.com), an API for a [supported LLM](https://api.js.langchain.com/interfaces/_langchain_openai.OpenAIClient.Beta.VectorStores.FileBatches.FileBatchCreateParams.StaticChunkingStrategyRequestParam.Static.html) like OpenAI, and data from a Google Sheet or Github Repo<!--DataStax Astra DB-->.  
 
-[API storage in browser using javascript with YAML](/localsite/tools/storage/api/)
+[Our API storage in browser using javascript with YAML](/localsite/tools/storage/api/)
+[And the option to remove LangChain to simplify](https://www.octomind.dev/blog/why-we-no-longer-use-langchain-for-building-our-ai-agents)
 
 ---
 <br>IN PROGRESS: Python Langchain  
