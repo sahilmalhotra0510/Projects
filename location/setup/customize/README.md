@@ -33,7 +33,18 @@ Run to deactivate Ollama so you can use an external pipeline instead:
 
 ## Sync.py
 
+Run in the root of your website to reactivate Ollama prior to syncing.
+
 The following reinstates Ollama so we can sync from [open-webui](https://github.com/open-webui/open-webui).
+
+You can make a fork of our: [github.com/datascape/open-webui](https://github.com/datascape/open-webui)
+
+Pull your fork locally, then run in your webroot to update the open-webui repo:
+
+	python projects/location/setup/customize/sync.py "open-webui"
+
+Click "commits ahead of"
+Click "Files changed"
 
 Removes comments we added to deactivate Ollama. 
 Files and lines updated are in file-lines.py (which will also be used by customize.py to add comments).
@@ -43,17 +54,6 @@ Sync.py first checks if the file is either cypress.config.ts or chat.cy.ts and h
 - The env block is removed from cypress.config.ts.
 - For chat.cy.ts, the beforeEach block is reverted to the previous version.
 - The code handles duplicates.
-
-Run in the root of your website to reactivate Ollama prior to syncing.
-
-Make a fork of: [github.com/datascape/open-webui](https://github.com/datascape/open-webui)
-
-Pull your fork locally, then run in your webroot to update the open-webui repo:
-
-	python projects/location/setup/customize/sync.py "open-webui"
-
-Click "commits ahead of"
-Click "Files changed"
 
 Also see CHANGELOG-workflow.md in the current folder.
 

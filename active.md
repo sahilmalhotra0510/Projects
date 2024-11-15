@@ -41,20 +41,20 @@ Start by [installing a couple of our Website repos locally](../localsite/start/s
 
 ## Google Data Commons Timelines
 
-TO DO: [Hosting DataCommons locally with Flask](/localsite/info/data/datacommons) - Vishnupriya and our GDC team
-IN PROGRESS: [Javascript Timelines from Google Data Commons API](/data-commons/docs/data/) - Mehul, Aishwrya, Vishnupriya
-IN PROGRESS: [Python pull from Google Data Commons API](/data-commons/docs/data/) - Zihan, Bhavna
+IN PROGRESS: [Javascript Timelines from Google Data Commons API](/data-commons/docs/data/) - Priyanka, Mehul, Aishwrya, Vishnupriya
+IN PROGRESS: [Python pull from Google Data Commons API](/data-commons/docs/data/) - Zihan, Bhavna and Abhishek L. for our [Location Map Filters](/localsite/info/data/map-filters/)
 
 <!--
-[Observable Framework Dashboard for UN Goals](https://observablehq.com/framework/) - with our .csv timelines and DuckDB Parquet impact files
--->
-
 **More Data Commons Visualization Projects**
 [Observable with Data Commons](/data-commons/) - [Data Loaders How-To](/data-commons/dist/air/)
-<!--
+
 [Python CoLabs for GDC timeline automation - Air and Climate](/data-commons/dist/air)
 
 [Kargil's notes](https://github.com/modelearth/Observables-DataLoader/tree/master/docs)
+
+[Observable Framework Dashboard for UN Goals](https://observablehq.com/framework/) - with our .csv timelines and DuckDB Parquet impact files
+
+TO DO: [Hosting DataCommons locally with Flask](/localsite/info/data/datacommons) - Vishnupriya and our GDC team
 -->
 
 ## RealityStream ML
@@ -66,7 +66,6 @@ TO DO: Send URL hash # parameters to our [Run Models CoLab](/RealityStream) usin
 **Anvil with our CoLabs:**
 [Anvil Extras](https://anvil-extras.readthedocs.io/en/latest/guides/index.html) and [Anvil](https://anvil.works/learn/tutorials/data-science#connecting-notebooks) and [AnvilScope CoLab](https://colab.research.google.com/drive/1rlOPfOxRnfm4pTGSn3gk_MvmVF65iidF?usp=sharing) using Plotly - Soham
 
-Vindhya is joining us Oct 24
 
 <!--
 - [StreamLit hosting within Open WebUI](https://github.com/streamlit/streamlit/issues/969)
