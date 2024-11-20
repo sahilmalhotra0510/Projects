@@ -39,6 +39,54 @@ Select an area of interest and choose a TO DO to contribute. Contact Loren for d
 
 Start by [installing a couple of our Website repos locally](../localsite/start/steps/) 
 
+
+## AI and Flask - Everybody's Home Repo
+
+[For Everybody's Home Page](../home) and [Any Repo](../home/repo)
+
+TO DO: Apply langchain.js to any GitHub repo in our [home repo folder](../home/repo) using API. Add field for entering Github account and repo name.
+
+**LangChain.JS:** in our [Planet repo](https://github.com/modelearth/planet/)  
+Setup javascript for Retrieval Augmented Generation (RAG) using a static Javascript page with [LangChain.js](https://api.js.langchain.com), an API for a [supported LLM](https://api.js.langchain.com/interfaces/_langchain_openai.OpenAIClient.Beta.VectorStores.FileBatches.FileBatchCreateParams.StaticChunkingStrategyRequestParam.Static.html) like OpenAI, and data from a Google Sheet or Github Repo<!--DataStax Astra DB-->.  
+
+
+[Our API storage in browser using javascript with YAML](/localsite/tools/storage/api/)
+
+---
+<br>TO DO: Move Python Langchain into main branch
+
+[Our Python Langchain Repo](https://github.com/modelearth/langchain/) <!--Dhananjay and Pranathi  -->
+
+**Python Retrieval Augmented Generation (RAG)**
+[Conversational RAG for 10 LLMs](https://python.langchain.com/docs/tutorials/qa_chat_history/) - Pradeep and Pranoy  
+
+Pradeep: Pinecone on AWS free 2 GB max
+Pranoy: DocArray in memory Vecto Store (database)
+
+[Google Notebook LM](https://notebooklm.google)
+
+[The option to remove LangChain to simplify](https://www.octomind.dev/blog/why-we-no-longer-use-langchain-for-building-our-ai-agents)
+
+**Retrieval-Interleaved Generation (RIG)**  
+Using [Google Data Commons DataGemma AI](https://ai.google.dev/gemma/docs/datagemma) - Zihan found that a paid Google plan was needed to avoid storage/memory errors/timeouts. Here's our [RIG CoLab](https://colab.research.google.com/drive/1eLtHOR6e3lAUVijUJ56VMaiTU6hA9enc?usp=sharing).
+
+[Innovations in Water Purification](/evaporation-kits/innovations/) - Hyper Desalination - Content prep for RAG
+
+
+## RealityStream ML
+
+[Run Models Colab](/RealityStream/)
+
+TO DO: Send URL hash # parameters to our [Run Models CoLab](/RealityStream) using a [webhook on Google Cloud (ChatGPT)](https://chatgpt.com/share/670e7002-85fc-8003-a466-9b682012f3ea) - Abhishek L
+
+**Anvil with our CoLabs:**
+[Anvil Extras](https://anvil-extras.readthedocs.io/en/latest/guides/index.html) and [Anvil](https://anvil.works/learn/tutorials/data-science#connecting-notebooks) and [AnvilScope CoLab](https://colab.research.google.com/drive/1rlOPfOxRnfm4pTGSn3gk_MvmVF65iidF?usp=sharing) using Plotly - Soham
+
+
+<!--
+- [StreamLit hosting within Open WebUI](https://github.com/streamlit/streamlit/issues/969)
+-->
+
 ## Google Data Commons Timelines
 
 IN PROGRESS: [Javascript Timelines from Google Data Commons API](/data-commons/docs/data/) - Priyanka, Mehul, Aishwrya, Vishnupriya
@@ -56,53 +104,6 @@ IN PROGRESS: [Python pull from Google Data Commons API](/data-commons/docs/data/
 
 TO DO: [Hosting DataCommons locally with Flask](/localsite/info/data/datacommons) - Vishnupriya and our GDC team
 -->
-
-## RealityStream ML
-
-[Run Models Colab](/RealityStream/)
-
-TO DO: Send URL hash # parameters to our [Run Models CoLab](/RealityStream) using a [webhook on Google Cloud (ChatGPT)](https://chatgpt.com/share/670e7002-85fc-8003-a466-9b682012f3ea) - Abhishek L
-
-**Anvil with our CoLabs:**
-[Anvil Extras](https://anvil-extras.readthedocs.io/en/latest/guides/index.html) and [Anvil](https://anvil.works/learn/tutorials/data-science#connecting-notebooks) and [AnvilScope CoLab](https://colab.research.google.com/drive/1rlOPfOxRnfm4pTGSn3gk_MvmVF65iidF?usp=sharing) using Plotly - Soham
-
-
-<!--
-- [StreamLit hosting within Open WebUI](https://github.com/streamlit/streamlit/issues/969)
--->
-
-## Everybody's Home (Langchain from Repos)<!-- RIGs from Repos-->
-
-[For Everybody's Home Page](../home) 
-
-TO DO: Javascript Langchain  
-
-[Our Langchain Repo](https://github.com/modelearth/langchain/) - Dhananjay and Pranathi  
-Apply langchain.js to any GitHub repo in our [home repo folder](../home/repo) using API. Add field for entering Github account and repo name.
-
-**LangChain.JS:** in our [Planet repo](https://github.com/modelearth/planet/)  
-Setup javascript for Retrieval Augmented Generation (RAG) using a static Javascript page with [LangChain.js](https://api.js.langchain.com), an API for a [supported LLM](https://api.js.langchain.com/interfaces/_langchain_openai.OpenAIClient.Beta.VectorStores.FileBatches.FileBatchCreateParams.StaticChunkingStrategyRequestParam.Static.html) like OpenAI, and data from a Google Sheet or Github Repo<!--DataStax Astra DB-->.  
-
-[Our API storage in browser using javascript with YAML](/localsite/tools/storage/api/)
-[And the option to remove LangChain to simplify](https://www.octomind.dev/blog/why-we-no-longer-use-langchain-for-building-our-ai-agents)
-
----
-<br>IN PROGRESS: Python Langchain  
-
-**Python Retrieval Augmented Generation (RAG)**
-[Conversational RAG for 10 LLMs](https://python.langchain.com/docs/tutorials/qa_chat_history/) - Pradeep and Pranoy  
-
-Pradeep: Pinecone on AWS free 2 GB max
-Pranoy: DocArray in memory Vecto Store (database)
-
-[Google Notebook LM](https://notebooklm.google)
-
-
-**Retrieval-Interleaved Generation (RIG)**  
-Using [Google Data Commons DataGemma AI](https://ai.google.dev/gemma/docs/datagemma) - Zihan found that a paid Google plan was needed to avoid storage/memory errors/timeouts. Here's our [RIG CoLab](https://colab.research.google.com/drive/1eLtHOR6e3lAUVijUJ56VMaiTU6hA9enc?usp=sharing).
-
-[Innovations in Water Purification](/evaporation-kits/innovations/) - Hyper Desalination - Content prep for RAG
-
 
 ## International Trade Flow
 
