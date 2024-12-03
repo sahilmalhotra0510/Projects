@@ -9,7 +9,6 @@ medium.com subscription needed
 -->
 
 
-
 <!--
 - [Observable Data Commons](/data-commons/) - [Open WebUI](location/) - [Storyboard Generator](/data-pipeline/research) - [Moonshots](/community/projects/)
 -->
@@ -40,20 +39,25 @@ Select an area of interest and choose a TO DO to contribute. Contact Loren for d
 Start by [installing a couple of our Website repos locally](../localsite/start/steps/) 
 
 
-## AI and Flask - Everybody's Home Repo
+## Everybody's Home Repo - with FeedPlayer
 
-[For Everybody's Home Page](../home) and [Any Repo](../home/repo)
+[For Everybody's Home Page](../home) and [Any Repo](../home/repo) we're figuring out how to pull GitHub image feeds into [our FeedPlayer](https://model.earth/feed).
 
-TO DO: Apply langchain.js to any GitHub repo in our [home repo folder](../home/repo) using API. Add field for entering Github account and repo name.
+
+## Langchain.JS
+
+TO DO: Apply langchain.js to any GitHub repo in our [home repo folder](../home/repo) using API.  
+Add field for entering Github account and repo name.
 
 **LangChain.JS:** in our [Planet repo](https://github.com/modelearth/planet/)  
 Setup javascript for Retrieval Augmented Generation (RAG) using a static Javascript page with [LangChain.js](https://api.js.langchain.com), an API for a [supported LLM](https://api.js.langchain.com/interfaces/_langchain_openai.OpenAIClient.Beta.VectorStores.FileBatches.FileBatchCreateParams.StaticChunkingStrategyRequestParam.Static.html) like OpenAI, and data from a Google Sheet or Github Repo<!--DataStax Astra DB-->.  
 
-
 [Our API storage in browser using javascript with YAML](/localsite/tools/storage/api/)
 
----
-<br>TO DO: Move Python Langchain into main branch
+
+## Langchain Python
+
+TO DO: Move Python Langchain into main branch
 
 [Our Python Langchain Repo](https://github.com/modelearth/langchain/) <!--Dhananjay and Pranathi  -->
 
@@ -65,12 +69,13 @@ Pranoy: DocArray in memory Vecto Store (database)
 
 [Google Notebook LM](https://notebooklm.google)
 
-[The option to remove LangChain to simplify](https://www.octomind.dev/blog/why-we-no-longer-use-langchain-for-building-our-ai-agents)
+We can also [remove LangChain to simplify](https://www.octomind.dev/blog/why-we-no-longer-use-langchain-for-building-our-ai-agents)
+
+Content prep for RAG: [Innovations in Water Purification](/evaporation-kits/innovations/) - Hyper Desalination
 
 **Retrieval-Interleaved Generation (RIG)**  
-Using [Google Data Commons DataGemma AI](https://ai.google.dev/gemma/docs/datagemma) - Zihan found that a paid Google plan was needed to avoid storage/memory errors/timeouts. Here's our [RIG CoLab](https://colab.research.google.com/drive/1eLtHOR6e3lAUVijUJ56VMaiTU6hA9enc?usp=sharing).
+Using [Google Data Commons DataGemma AI](https://ai.google.dev/gemma/docs/datagemma) - For RIG, Zihan found that a paid Google plan was needed to avoid storage/memory errors/timeouts. Here's our [RIG CoLab](https://colab.research.google.com/drive/1eLtHOR6e3lAUVijUJ56VMaiTU6hA9enc?usp=sharing).
 
-[Innovations in Water Purification](/evaporation-kits/innovations/) - Hyper Desalination - Content prep for RAG
 
 
 ## RealityStream ML
@@ -123,6 +128,9 @@ TO DO: [Sankey Industry eChart](/OpenFootprint/charts/echarts/sankey-nodeAlign-l
 
 TO DO: [Python - Finalize our All the Places data by State and Zip](/places)
 
+## Exiobase and Flask
+
+[Our Exiobase-Global-Trade GitHub Repo](https://github.com/modelearth/exiobase-global-trade) and a new [Comtrade API pull](https://github.com/ModelEarth/exiobase-global-trade/tree/main/comtrade)
 
 ## US EPA State Impacts
 
