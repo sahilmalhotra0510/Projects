@@ -37,13 +37,13 @@ Also [install related repos locally](../localsite/start/steps/).
 
 ## Everybody's Home Page
 
-[For Everybody's Home Page](../home) we're pulling GitHub image feeds into [our FeedPlayer](https://model.earth/feed).
+[For Everybody's Home Page](../home) we'll be pulling GitHub image feeds into [our FeedPlayer](https://model.earth/feed).
 
-TO DO: Add a field called #gitrepo for pasting a Github account and repo name on our [home repo folder](../home/repo).  
+TO DO: Add a field called #gitrepo on our [home repo dev page](../home/repo) for pasting a Github account and repo name.  
 
 Set the default repo to: [https://github.com/modelearth/requests](https://github.com/modelearth/requests)
 
-Include an alert if the URL does not contain github.com (or another git host), an account and a repo name.  
+Include an alert if the URL does not contain github.com (or another git provider), an account and a repo name.  
 
 ## Planet Javascript AI
 
