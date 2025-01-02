@@ -130,7 +130,7 @@ TO DO: [Python - Finalize our All the Places data by State and Zip](/places)
 
 ## Exiobase and Flask
 
-[Our Exiobase-Global-Trade GitHub Repo](https://github.com/modelearth/exiobase-global-trade) and a new [Comtrade API pull](https://github.com/ModelEarth/exiobase-global-trade/tree/main/comtrade)
+For our [International Trade Flow](/openfootprint/trade/) we can integrate our [Exiobase-Global-Trade GitHub Repo](https://github.com/modelearth/exiobase-global-trade) and a new [Comtrade API pull](https://github.com/ModelEarth/exiobase-global-trade/tree/main/comtrade)
 
 ## US EPA State Impacts
 
