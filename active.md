@@ -1,5 +1,3 @@
-Our meetups are [Wednesdays at NOON ET](/io/coders/) and [Fridays at 6 PM ET](/io/coders) and [Sundays at 10 PM ET](/io/coders/).
-
 
 <!--
 medium.com subscription needed
@@ -31,29 +29,28 @@ Create a developer account in [Omdena.com](https://omdena.com) and help us creat
 
 # Active Projects
 
+Our weekly meetup are every [Thursday at 7pm ET](/io/coders/).
 
-<!--# Choose your own Adventure -->
+Select an area of interest and choose a TO DO to contribute. Add your first name below and [send a PR](https://github.com/ModelEarth/projects/blob/main/active.md).
 
-Select an area of interest and choose a TO DO to contribute. Contact Loren for details.
-
-Start by [installing a couple of our Website repos locally](../localsite/start/steps/) 
+Also [install related repos locally](../localsite/start/steps/) 
 
 
-## Everybody's Home Repo - with FeedPlayer
+## Everybody's Home Page
 
 [For Everybody's Home Page](../home) and [Any Repo](../home/repo) we're figuring out how to pull GitHub image feeds into [our FeedPlayer](https://model.earth/feed).
 
+TO DO: Add field for pasting a Github account and repo name on our [home repo folder](../home/repo).  
 
-## Langchain.JS
+## Planet Javascript AI
 
-TO DO: Apply langchain.js to any GitHub repo in our [home repo folder](../home/repo) using API.  
-Add field for entering Github account and repo name.
+TO DO: Using [Langchain's Chat Model Interface](https://python.langchain.com/docs/concepts/chat_models/), send a page from any repo to an AI API like OpenAI.
 
-**LangChain.JS:** in our [Planet repo](https://github.com/modelearth/planet/)  
-Setup javascript for Retrieval Augmented Generation (RAG) using a static Javascript page with [LangChain.js](https://api.js.langchain.com), an API for a [supported LLM](https://api.js.langchain.com/interfaces/_langchain_openai.OpenAIClient.Beta.VectorStores.FileBatches.FileBatchCreateParams.StaticChunkingStrategyRequestParam.Static.html) like OpenAI, and data from a Google Sheet or Github Repo<!--DataStax Astra DB-->.  
+Add the javascript to our [Planet repo](https://github.com/modelearth/planet/) to provide Retrieval Augmented Generation (RAG) using [LangChain.js](https://api.js.langchain.com) javascript. 
 
-[Our API storage in browser using javascript with YAML](/localsite/tools/storage/api/)
+Integrate [our API storage in javascript](/localsite/tools/storage/api/) to store API keys locally.
 
+<!--See also: DataStax Astra DB-->
 
 ## Langchain Python
 
