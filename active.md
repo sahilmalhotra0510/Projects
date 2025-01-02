@@ -26,21 +26,24 @@ Create a developer account in [Omdena.com](https://omdena.com) and help us creat
 - [Document adding Flask as our optional python webroot](../localsite/start/steps/)
 -->
 
-
 # Active Projects
 
 Our weekly meetup are every [Thursday at 7pm ET](/io/coders/).
 
 Select an area of interest and choose a TO DO to contribute. Add your first name below and [send a PR](https://github.com/ModelEarth/projects/blob/main/active.md).
 
-Also [install related repos locally](../localsite/start/steps/) 
+Also [install related repos locally](../localsite/start/steps/). 
 
 
 ## Everybody's Home Page
 
-[For Everybody's Home Page](../home) and [Any Repo](../home/repo) we're figuring out how to pull GitHub image feeds into [our FeedPlayer](https://model.earth/feed).
+[For Everybody's Home Page](../home) we're pulling GitHub image feeds into [our FeedPlayer](https://model.earth/feed).
 
-TO DO: Add field for pasting a Github account and repo name on our [home repo folder](../home/repo).  
+TO DO: Add a field called #gitrepo for pasting a Github account and repo name on our [home repo folder](../home/repo).  
+
+Set the default repo to: [https://github.com/modelearth/requests](https://github.com/modelearth/requests)
+
+Include an alert if the URL does not contain github.com (or another git host), an account and a repo name.  
 
 ## Planet Javascript AI
 
