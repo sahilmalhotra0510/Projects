@@ -28,73 +28,23 @@ Create a developer account in [Omdena.com](https://omdena.com) and help us creat
 
 # Active Projects
 
-Our weekly meetup are every [Thursday at 7pm ET](/io/coders/).
+Our weekly meetups are every [Thursday at 7pm ET](/io/coders/).
 
-Select an area of interest and choose a TO DO to contribute. Add your first name below and [send a PR](https://github.com/ModelEarth/projects/blob/main/active.md).
+Select 1 of the 7 project areas below and add your first name below by editing a [fork of the projects repo](https://github.com/ModelEarth/projects/blob/main/active.md), then send a PR.
 
-Also [install related repos locally](../localsite/start/steps/). 
+**Active OPT Volunteers:** If you're participacting as a 22-hour per week OPT student, please contribute at least one Pull Request (PR) per week to remain active.  Using Github Desktop, add your name by the projects you are working on and send a PR.
+
+Please actively update README files. Add status updates and deployment steps, correct existing notes. Send Loren an email whenever you send a pull reques. If you are uncertain about an edit, make your best guess and email Loren with what to look at AFTER you submit the PR.
+
+[Fork and clone related repos](../localsite/start/steps/) - When writing Loren, include a review link. Your review link will be: [youraccount].github.io/[therepo] once you've turned on Github Pages for your fork of the repo and for your fork of the localsite repo.
 
 
-## Everybody's Home Page
+## 1. Goal Visualization - Everybody's Home Page (Javascript)
 
 [For Everybody's Home Page](../home) we'll be pulling GitHub image feeds into [our FeedPlayer](https://model.earth/feed).
 
-TO DO: Add a field called #gitrepo on our [home repo dev page](../home/repo) for pasting a Github account and repo name.  
-
-Set the default repo to: [https://github.com/modelearth/requests](https://github.com/modelearth/requests)
-
-Include an alert if the URL does not contain github.com (or another git provider), an account and a repo name.  
-
-## Planet Javascript AI
-
-TO DO: Using [Langchain's Chat Model Interface](https://python.langchain.com/docs/concepts/chat_models/), send a page from any repo to an AI API like OpenAI.
-
-Add the javascript to our [Planet repo](https://github.com/modelearth/planet/) to provide Retrieval Augmented Generation (RAG) using [LangChain.js](https://api.js.langchain.com) javascript. 
-
-Integrate [our API storage in javascript](/localsite/tools/storage/api/) to store API keys locally.
-
-<!--See also: DataStax Astra DB-->
-
-## Langchain Python
-
-TO DO: Move Python Langchain into main branch
-
-[Our Python Langchain Repo](https://github.com/modelearth/langchain/) <!--Dhananjay and Pranathi  -->
-
-**Python Retrieval Augmented Generation (RAG)**
-[Conversational RAG for 10 LLMs](https://python.langchain.com/docs/tutorials/qa_chat_history/) - Pradeep and Pranoy  
-
-Pradeep: Pinecone on AWS free 2 GB max
-Pranoy: DocArray in memory Vecto Store (database)
-
-[Google Notebook LM](https://notebooklm.google)
-
-We can also [remove LangChain to simplify](https://www.octomind.dev/blog/why-we-no-longer-use-langchain-for-building-our-ai-agents)
-
-Content prep for RAG: [Innovations in Water Purification](/evaporation-kits/innovations/) - Hyper Desalination
-
-**Retrieval-Interleaved Generation (RIG)**  
-Using [Google Data Commons DataGemma AI](https://ai.google.dev/gemma/docs/datagemma) - For RIG, Zihan found that a paid Google plan was needed to avoid storage/memory errors/timeouts. Here's our [RIG CoLab](https://colab.research.google.com/drive/1eLtHOR6e3lAUVijUJ56VMaiTU6hA9enc?usp=sharing).
-
-
-
-## RealityStream ML
-
-[Run Models Colab](/RealityStream/)
-
-TO DO: Send URL hash # parameters to our [Run Models CoLab](/RealityStream) using a [webhook on Google Cloud (ChatGPT)](https://chatgpt.com/share/670e7002-85fc-8003-a466-9b682012f3ea) - Abhishek L
-
-**Anvil with our CoLabs:**
-[Anvil Extras](https://anvil-extras.readthedocs.io/en/latest/guides/index.html) and [Anvil](https://anvil.works/learn/tutorials/data-science#connecting-notebooks) and [AnvilScope CoLab](https://colab.research.google.com/drive/1rlOPfOxRnfm4pTGSn3gk_MvmVF65iidF?usp=sharing) using Plotly - Soham
-
-
-<!--
-- [StreamLit hosting within Open WebUI](https://github.com/streamlit/streamlit/issues/969)
--->
-
-## Google Data Commons Timelines
-
 IN PROGRESS: [Javascript Timelines from Google Data Commons API](/data-commons/docs/data/) - Priyanka, Mehul, Aishwrya, Vishnupriya
+
 IN PROGRESS: [Python pull from Google Data Commons API](/data-commons/docs/data/) - Zihan, Bhavna and Abhishek L. for our [Location Map Filters](/localsite/info/data/map-filters/)
 
 <!--
@@ -110,7 +60,99 @@ IN PROGRESS: [Python pull from Google Data Commons API](/data-commons/docs/data/
 TO DO: [Hosting DataCommons locally with Flask](/localsite/info/data/datacommons) - Vishnupriya and our GDC team
 -->
 
-## International Trade Flow
+## 2. Planet AI - Javascript with LLM APIs
+
+TO DO: Add a field called #gitrepo on our [home repo dev page](../home/repo) for pasting a Github account and repo name. Include an alert if the URL does not contain github.com (or another git provider), an account and a repo name.  
+
+TO DO: Add javascript to our [Planet repo](https://github.com/modelearth/planet/) that uses [Langchain's Chat Model Interface](https://python.langchain.com/docs/concepts/chat_models/), send a page from any GitHUb repo to an AI API like OpenAI to provide Retrieval Augmented Generation (RAG) using [LangChain.js](https://api.js.langchain.com) javascript. 
+
+Integrate [our API storage in javascript](/localsite/tools/storage/api/) to store API keys locally.
+
+<!--See also: DataStax Astra DB-->
+
+**Python Retrieval Augmented Generation (RAG)**
+
+TO DO: Move Python Langchain into main branch.
+
+[Our Python Langchain Repo](https://github.com/modelearth/langchain/) <!--Dhananjay and Pranathi  -->
+
+[Conversational RAG for 10 LLMs](https://python.langchain.com/docs/tutorials/qa_chat_history/) - Pradeep and Pranoy  
+
+Pradeep: Pinecone on AWS free 2 GB max
+Pranoy: DocArray in memory Vecto Store (database)
+
+We can also [remove LangChain to simplify](https://www.octomind.dev/blog/why-we-no-longer-use-langchain-for-building-our-ai-agents)
+
+Content prep for RAG: [Innovations in Water Purification](/evaporation-kits/innovations/) - Hyper Desalination
+
+**Retrieval-Interleaved Generation (RIG)**  
+Using [Google Data Commons DataGemma AI](https://ai.google.dev/gemma/docs/datagemma) - For RIG, Zihan found that a paid Google plan was needed to avoid storage/memory errors/timeouts. Here's our [RIG CoLab](https://colab.research.google.com/drive/1eLtHOR6e3lAUVijUJ56VMaiTU6hA9enc?usp=sharing).
+
+
+### OpenWebUI LLM Location Data
+
+[OpenWebUI](/projects/location/setup/customize/) - Reactivates Ollama for Sync, Docker and location addons
+
+[Open WebUI (Projects)](location/) with Python and [Retrieval Augmented Generation (RAG)](https://docs.openwebui.com/tutorial/rag/)
+for "context window" recency<!-- Next: Text to Action / Nividia Kuda is their advantage = code library that interacts with chip -->
+
+[Earthscape NextJS Chatbot UI](/earthscape/app/) - React, Supabase and [NextJS Hosting using GitHub Pages](https://www.freecodecamp.org/news/how-to-deploy-next-js-app-to-github-pages/)
+
+[Add localsite.js to OpenWebUI](/projects/location/) - Use our [Building Branches Locally](/projects/location/setup/) techniques within our [Datascape fork](https://github.com/datascape/open-webui/actions)
+
+
+### Storyboard Generator
+
+Images and Videos from .CSV prompts 
+for Interactive presentation backgrounds, Request Visualization
+
+- [AI Requests Visualization](/requests/) - for Storyboards, Meal Planning and Project Visualization  
+- [Music for Data Science](https://github.com/DreamStudioCode/music) - for [home/repo](/home/repo)
+
+- [Image Gallery (JQuery) and Video (Leonardo)](/data-pipeline/research/stream)
+- [Our Storyboard Generator](/data-pipeline/research/)
+- [Open Webui image generation](https://docs.openwebui.com/tutorial/images/) - Integrate our image .csv process
+  <!-- [Kishor's Repo](https://github.com/mannurkishorreddy/streamlit-replicate-img-app)-->
+  <!--- [Image Gallery (React)](/react-gallery/view/) - Anthony -->
+
+[Google Notebook LM](https://notebooklm.google)
+
+
+## 3. RealityStream ML - Server-Side Python
+
+[Run Models Colab](/RealityStream/)
+
+TO DO: Send URL hash # parameters to our [Run Models CoLab](/RealityStream) using a [webhook on Google Cloud (ChatGPT)](https://chatgpt.com/share/670e7002-85fc-8003-a466-9b682012f3ea)
+
+<!--
+**Anvil with our CoLabs:**
+[Anvil Extras](https://anvil-extras.readthedocs.io/en/latest/guides/index.html) and [Anvil](https://anvil.works/learn/tutorials/data-science#connecting-notebooks) and [AnvilScope CoLab](https://colab.research.google.com/drive/1rlOPfOxRnfm4pTGSn3gk_MvmVF65iidF?usp=sharing) using Plotly - Soham
+-->
+
+<!--
+- [StreamLit hosting within Open WebUI](https://github.com/streamlit/streamlit/issues/969)
+-->
+
+
+- [RealityStream](/RealityStream/) - Machine Learning Classification Models - TO DO
+- [Process Industry NAICS by Zip Code](/community-zipcodes/mail) - DONE Yunbo
+- [ML for Community Forecasting Timelines](../data-pipeline/timelines/) - Zip code pipeline - TO DO
+- [Open Data Panels - YAML Display](/OpenFootprint) - Microsoft Plug and Play - TO DO
+
+- [Top Commodities by State (hide sort columns)](/data-pipeline/research/economy) - Dinesh
+- [State Regions using Sets of Counties](/community-data/us/edd/) - Dinesh
+- [USEEIO matrix files with clustering](/machine-learning/python/cluster/) - <!--Honglin-->Rupesh
+
+<!--
+- [CrewAI+Ollama integration](https://lightning.ai/lightning-ai/studios/ai-agents-powered-by-crewai) within our [Open WebUI fork](location)
+- [Flowsa RStudio - API to JSON](/localsite/info/data/flowsa/)
+-->
+
+- [Update Farm Fresh Data pull](/community-data/process/python/farmfresh/) - Bhavna - DONE
+- [Push EPA date to Google Data Commons API](https://docs.datacommons.org/api/)
+
+
+## 4. International Trade Flow - Python, SQL, Javascript
 
 TO DO: Processing Exiobase in CoLabs, displaying with javascript
 
@@ -128,11 +170,11 @@ TO DO: [Sankey Industry eChart](/OpenFootprint/charts/echarts/sankey-nodeAlign-l
 
 TO DO: [Python - Finalize our All the Places data by State and Zip](/places)
 
-## Exiobase and Flask
+#### Exiobase and Flask
 
 For our [International Trade Flow](/openfootprint/trade/) we can integrate our [Exiobase-Global-Trade GitHub Repo](https://github.com/modelearth/exiobase-global-trade) and a new [Comtrade API pull](https://github.com/ModelEarth/exiobase-global-trade/tree/main/comtrade)
 
-## US EPA State Impacts
+#### US EPA State Impacts
 
 TO DO: Pull into SQL DuckDB
 
@@ -141,7 +183,8 @@ TO DO: Pull into SQL DuckDB
 [React Team - Commodity Totals](/localsite/info/data/totals/) in [Jobs Reports](/localsite/info/#indicators=JOBS)
 [Impact Label Pipeline](/apps/impact) - Starting point for duplicating US EPA RStudio in python
 
-## Open Footprints YAML Display
+
+## 5. BuildingTransparency.org API - Open Footprint Interactive Labels
 
 [Open Footprints](/food/) - [Product Impact API](/OpenFootprint/products/), Add javascript tp [Feed View](/feed/view/)  
 
@@ -157,29 +200,10 @@ Bhavna, Yash
 - [BuildingTransparency - JSON file pull for impact templates](/io/template/product/)
 
 
-## OpenWebUI LLM Location Data
 
-IN PROGRESS - Dhananjay
+## 6. Feed Player React - Embeddable Viewer for Images and Video
 
-[OpenWebUI](/projects/location/setup/customize/) - Reactivates Ollama for Sync, Docker and location addons
-
-[Open WebUI (Projects)](location/) with Python and [Retrieval Augmented Generation (RAG)](https://docs.openwebui.com/tutorial/rag/)
-for "context window" recency<!-- Next: Text to Action / Nividia Kuda is their advantage = code library that interacts with chip -->
-
-[Earthscape NextJS Chatbot UI](/earthscape/app/) - React, Supabase and [NextJS Hosting using GitHub Pages](https://www.freecodecamp.org/news/how-to-deploy-next-js-app-to-github-pages/)
-
-[Add localsite.js to OpenWebUI](/projects/location/) - Use our [Building Branches Locally](/projects/location/setup/) techniques within our [Datascape fork](https://github.com/datascape/open-webui/actions)
-
-
-
-## Team Tools
-
-- [Building and documenting webhook](/webhook) - Sends Word Doc from Google Form  - Arnab
-- [Discord API](https://discord.com/developers/docs/intro) - Team bios in our Feed Player  
-- Odoo on Google Cloud for [Modules and Templates](https://www.odoo.com/documentation/master/developer/tutorials/website.html) and [Owl](https://www.cybrosys.com/blog/an-overview-of-the-owl-component-lifecycle) with the [Owl Github repo](https://github.com/odoo/owl)
-
-
-## Feed Player React
+- [Discord API](https://discord.com/developers/docs/intro) - Our Team list is already pulled from Discord into our [Feed Player](https://model.earth/feed/) 
 
 - [Feed Player](../feed/dist) - Video and Images from API feeds and Google Sheet lists
 - [NASA Feed Viewer](../feed/view/#feed=nasa) - JSON, YAML, CSS, RSS - [Address Lookup](/feed/view/#feed=311)
@@ -209,50 +233,13 @@ https://youtu.be/_AOA6M9Ta2I?si=Bh8SMhyD3GmuCLks&t=378
 CSV Files to use for Timelines, Observable, and AI Training at: [industries/naics/US/counties](https://github.com/ModelEarth/community-data/tree/master/industries/naics/US/counties)
 Pre-processed data for county industry levels, based on employment, establishments and payroll.-->
 
-## ML with Python and Google Data Commons
 
-- [RealityStream](/RealityStream/) - Machine Learning Classification Models - Ivy, Kelvin and many more - TO DO
-- [Process Industry NAICS by Zip Code](/community-zipcodes/mail) - DONE Yunbo
-- [ML for Community Forecasting Timelines](../data-pipeline/timelines/) - Zip code pipeline TO DO
-- [Open Data Panels - YAML Display](/OpenFootprint) - Microsoft Plug and Play - TO DO
-
-- [Top Commodities by State (hide sort columns)](/data-pipeline/research/economy) - Dinesh
-- [State Regions using Sets of Counties](/community-data/us/edd/) - Dinesh
-- [USEEIO matrix files with clustering](/machine-learning/python/cluster/) - <!--Honglin-->Rupesh
-
-<!--
-- [CrewAI+Ollama integration](https://lightning.ai/lightning-ai/studios/ai-agents-powered-by-crewai) within our [Open WebUI fork](location)
-- [Flowsa RStudio - API to JSON](/localsite/info/data/flowsa/)
+<!-- 
+- Odoo on Google Cloud for [Modules and Templates](https://www.odoo.com/documentation/master/developer/tutorials/website.html) and [Owl](https://www.cybrosys.com/blog/an-overview-of-the-owl-component-lifecycle) with the [Owl Github repo](https://github.com/odoo/owl)
 -->
 
-- [Update Farm Fresh Data pull](/community-data/process/python/farmfresh/) - Bhavna - DONE
-- [Push EPA date to Google Data Commons API](https://docs.datacommons.org/api/)
 
-## Storyboard Generator
-
-Images and Videos from .CSV prompts 
-for Interactive presentation backgrounds, Request Visualization
-
-- [AI Requests Visualization](/requests/) - for Storyboards, Meal Planning and Project Visualization  
-- [Music for Data Science](https://github.com/DreamStudioCode/music) - for [home/repo](/home/repo)
-
-- [Image Gallery (JQuery) and Video (Leonardo)](/data-pipeline/research/stream)
-- [Our Storyboard Generator](/data-pipeline/research/)
-- [Open Webui image generation](https://docs.openwebui.com/tutorial/images/) - Integrate our image .csv process
-  <!-- [Kishor's Repo](https://github.com/mannurkishorreddy/streamlit-replicate-img-app)-->
-  <!--- [Image Gallery (React)](/react-gallery/view/) - Anthony -->
-
-
-## Tabulator, Industry Timelines, SQLite in Browser
-
-- [Tabulator - Merge in industry year rows using Javascript (1-3)](/data-pipeline/timelines/tabulator/) - DONE<!--Rupesh, Vadlamudi-->
-- [Tabulator - Merge in titles using Javascript (4)](/data-pipeline/timelines/tabulator/) - DONE <!--Dinesh, Fanyi, Rupesh-->
-- [Steps for SQLite in Browser](/data-pipeline/timelines/sqlite/phiresky/) - [Example (Runs SQL)](https://phiresky.github.io/blog/2021/hosting-sqlite-databases-on-github-pages/)
-
-
-<!-- - [React Team - Impact Side Navigation](/io/charts/inflow-outflow/#set=prosperity&indicators=VADD,JOBS) -->
-
-## Moonshot Challenges
+## 7. Moonshot Challenges
 
 Our most challenging projects - [Take the leap](/community/projects/)
 <br>
