@@ -38,7 +38,7 @@ Please actively update README files. Add status updates and deployment steps, co
 
 [Fork and clone related repos](../localsite/start/steps/) - When writing Loren, include a review link. Your review link will be: [youraccount].github.io/[therepo] once you've turned on Github Pages for your both your fork of the repo and for your fork of the [localsite repo](https://github.com/modelearth/localsite/).
 
-You can edit this page to add your name by the projects, and add details for new updates. Send a PR and write Loren.
+You can [edit the current page](https://github.com/ModelEarth/projects/blob/main/active.md) to add your first name by the projects below, and add details for new updates. Submit a PR and write Loren.
 
 
 ## 1. Javascript Data Visualization (Everybody's Home Page)
@@ -111,7 +111,7 @@ Our [Earthscape fork of Chatbot UI](/earthscape/app/) - React, Supabase and [Nex
 Images and Videos from .CSV prompts 
 for Interactive presentation backgrounds, Request Visualization
 
-- [AI Requests Visualization](/requests/) - for Storyboards, Meal Planning and Project Visualization  
+- [Ai Request Visualization](/requests/) - for Storyboards, Meal Planning and Project Visualization  
 - [Music for Data Science](https://github.com/DreamStudioCode/music) - for [home/repo](/home/repo)
 
 - [Image Gallery (JQuery) and Video (Leonardo)](/data-pipeline/research/stream)
