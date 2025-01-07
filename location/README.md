@@ -15,7 +15,7 @@ A. [datascape/open-webui](https://github.com/datascape/open-webui/actions) - Fre
 B. [earthscape/open-webui-earthscape](https://github.com/earthscape/open-webui-earthscape/actions) - A little broken
 
 
-## Contribute in our Open WebUI "projects/location" folder
+## Contribute notes to our Open WebUI "projects/location" folder
 
 Our [customize.py script](setup/customize) is used to add our custom code.
 Our [sync.py script](setup/customize) removes custom code so we can sync with the parent.
@@ -23,9 +23,7 @@ Our [sync.py script](setup/customize) removes custom code so we can sync with th
 To avoid merge errors, if you're making updates in the "src" and "backend" folders,
 append "-team" to the names of the files you've copied and customized.
 
-
-TO DO: The html we added in this "projects" fork is breaking the GitHub Docker build.  
-Instead try simple edits in our [open-webui-earthscape](https://github.com/earthscape/open-webui-earthscape) fork. (Write loren to be added as a contributor.)
+TO DO: Try simple edits in our [open-webui-earthscape](https://github.com/earthscape/open-webui-earthscape) fork. (Write Loren to be added as a contributor.)
 
 ## Our OpenWebUI Projects
 
