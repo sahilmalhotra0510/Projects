@@ -32,20 +32,22 @@ Our weekly meetups are every [Thursday at 7pm ET](/io/coders/).
 
 Select 1 of the 7 project areas below and add your first name below by editing a [fork of the projects repo](https://github.com/ModelEarth/projects/blob/main/active.md), then send a PR.
 
-**Active OPT Volunteers:** If you're participacting as a 22-hour per week OPT student, please contribute at least one Pull Request (PR) per week to remain active.  Using Github Desktop, add your name by the projects you are working on and send a PR.
+**Active OPT Volunteers:** If you're participacting as an OPT grad, please contribute at least one Pull Request (PR) per week to remain active.  
 
 Please actively update README files. Add status updates and deployment steps, correct existing notes. Send Loren an email whenever you send a pull reques. If you are uncertain about an edit, make your best guess and email Loren with what to look at AFTER you submit the PR.
 
 [Fork and clone related repos](../localsite/start/steps/) - When writing Loren, include a review link. Your review link will be: [youraccount].github.io/[therepo] once you've turned on Github Pages for your fork of the repo and for your fork of the localsite repo.
 
+You can edit this page to add your name by the projects, and add details for new updates. Send a PR and write Loren.
+
 
 ## 1. Goal Visualization - Everybody's Home Page (Javascript)
 
-[For Everybody's Home Page](../home) we'll be pulling GitHub image feeds into [our FeedPlayer](https://model.earth/feed).
+Our [Everybody's Home Page](../home) process is being designed to display infinite content based on parameters.
 
-IN PROGRESS: [Javascript Timelines from Google Data Commons API](/data-commons/docs/data/) - Priyanka, Mehul, Aishwrya, Vishnupriya
+IN PROGRESS: [Javascript Timelines from Google Data Commons API](/data-commons/docs/data/) - Priyanka, Mehul <!--Aishwrya, Vishnupriya-->
 
-IN PROGRESS: [Python pull from Google Data Commons API](/data-commons/docs/data/) - Zihan, Bhavna and Abhishek L. for our [Location Map Filters](/localsite/info/data/map-filters/)
+We're pulling images and video via [our FeedPlayer](https://model.earth/feed) which can be pointed at a Github repo or any API for content.
 
 <!--
 **More Data Commons Visualization Projects**
