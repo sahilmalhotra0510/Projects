@@ -47,7 +47,7 @@ Our [Everybody's Home Page](../home) process is being designed to display infini
 
 IN PROGRESS: [Javascript Timelines from Google Data Commons API](/data-commons/docs/data/) - Priyanka, Mehul <!--Aishwrya, Vishnupriya-->
 
-We're pulling images and video via [our FeedPlayer](https://model.earth/feed) which can be pointed at a Github repo or any API for content.
+We're pulling images and video via [our FeedPlayer](https://model.earth/feed) which can be pointed at a Github repo or any API.
 
 <!--
 **More Data Commons Visualization Projects**
