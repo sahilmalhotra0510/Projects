@@ -30,7 +30,7 @@ Create a developer account in [Omdena.com](https://omdena.com) and help us creat
 
 Our weekly meetups are every [Thursday at 7pm ET](/io/coders/).
 
-Select 1 of the 7 project areas below and add your first name below by editing a [fork of the projects repo](https://github.com/ModelEarth/projects/blob/main/active.md), then send a PR.
+Select one of the 7 project areas below and add your first name below by editing a [fork of the projects repo](https://github.com/ModelEarth/projects/blob/main/active.md), then send a PR.
 
 **Active OPT Volunteers:** If you're participacting as an OPT grad, please contribute at least one Pull Request (PR) per week to remain active.  
 
@@ -41,7 +41,7 @@ Please actively update README files. Add status updates and deployment steps, co
 You can edit this page to add your name by the projects, and add details for new updates. Send a PR and write Loren.
 
 
-## 1. Goal Visualization - Everybody's Home Page (Javascript)
+## 1. Everybody's Home Page (Javascript Data Visualization)
 
 Our [Everybody's Home Page](../home) process is being designed to display infinite content based on parameters.
 
