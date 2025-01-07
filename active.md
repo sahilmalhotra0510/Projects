@@ -34,7 +34,7 @@ Select one of the 7 project areas below and add your first name below by editing
 
 **Active OPT Volunteers:** If you're participacting as an OPT grad, please contribute at least one Pull Request (PR) per week to remain active.  
 
-Please actively update README files. Add status updates and deployment steps, correct existing notes. Send Loren an email whenever you send a pull reques. If you are uncertain about an edit, make your best guess and email Loren with what to look at AFTER you submit the PR.
+Please actively update README files. Add status updates and deployment steps, correct existing notes. Send Loren an email whenever you send a pull request. If you are uncertain about an edit, make your best guess and email Loren AFTER you submit the PR.
 
 [Fork and clone related repos](../localsite/start/steps/) - When writing Loren, include a review link. Your review link will be: [youraccount].github.io/[therepo] once you've turned on Github Pages for your fork of the repo and for your fork of the localsite repo.
 
