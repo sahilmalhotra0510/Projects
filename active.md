@@ -64,7 +64,7 @@ We're pulling images and video via [our FeedPlayer](https://model.earth/feed) wh
 TO DO: [Hosting DataCommons locally with Flask](/localsite/info/data/datacommons) - Vishnupriya and our GDC team
 -->
 
-## 2. AI Javascript with LLM APIs (Planet repo)
+## 2. Ai Javascript with LLM APIs (Planet repo)
 
 TO DO: Add a field called #gitrepo on our [home repo dev page](../home/repo) for pasting a Github account and repo name. Include an alert if the URL does not contain github.com (or another git provider), an account and a repo name.  
 
@@ -93,14 +93,17 @@ Using [Google Data Commons DataGemma AI](https://ai.google.dev/gemma/docs/datage
 
 ### OpenWebUI LLM Location Data
 
-[OpenWebUI](/projects/location/setup/customize/) - Reactivates Ollama for Sync, Docker and location addons
+Our [Open WebUI for Locations](location/) experimental efforts aimed at [Retrieval Augmented Generation (RAG)](https://docs.openwebui.com/features/rag/) for "context window" recency.<!-- Next: Text to Action / Nividia Kuda is their advantage = code library that interacts with chip -->
 
-[Open WebUI (Projects)](location/) with Python and [Retrieval Augmented Generation (RAG)](https://docs.openwebui.com/tutorial/rag/)
-for "context window" recency<!-- Next: Text to Action / Nividia Kuda is their advantage = code library that interacts with chip -->
+Our work toward running [OpenWebUI with an External Ollama Pipeline](/projects/location/setup/customize/)  
+uses our Customize.py script to remove local use of Ollama.  
+And our Sync.py script to add-back Ollama to sync with the [OpenWebUI parent repo](https://github.com/open-webui/open-webui).
 
-[Earthscape NextJS Chatbot UI](/earthscape/app/) - React, Supabase and [NextJS Hosting using GitHub Pages](https://www.freecodecamp.org/news/how-to-deploy-next-js-app-to-github-pages/)
+TO DO: [Add localsite.js to OpenWebUI](/projects/location/) - Use our [Building Branches Locally](/projects/location/setup/) techniques within our [Datascape fork](https://github.com/datascape/open-webui/actions)
 
-[Add localsite.js to OpenWebUI](/projects/location/) - Use our [Building Branches Locally](/projects/location/setup/) techniques within our [Datascape fork](https://github.com/datascape/open-webui/actions)
+### Earthscape NextJS Chatbot UI fork
+
+Our [Earthscape fork of Chatbot UI](/earthscape/app/) - React, Supabase and [NextJS Hosting using GitHub Pages](https://www.freecodecamp.org/news/how-to-deploy-next-js-app-to-github-pages/)
 
 
 ### Storyboard Generator
