@@ -206,7 +206,7 @@ Bhavna, Yash
 
 
 
-## 6. Feed Player React - Embeddable Viewer for Images and Video
+## 6. React FeedPlayer with MemberSense - Embeddable Viewer for Images and Video
 
 - [Discord API](https://discord.com/developers/docs/intro) - Our Team list is pulled from Discord into our [Feed Player](https://model.earth/feed/) 
 
