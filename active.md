@@ -41,11 +41,13 @@ Please actively update README files. Add status updates and deployment steps, co
 You can edit this page to add your name by the projects, and add details for new updates. Send a PR and write Loren.
 
 
-## 1. Everybody's Home Page (Javascript Data Visualization)
+## 1. Javascript Data Visualization (Everybody's Home Page)
 
 Our [Everybody's Home Page](../home) process is being designed to display infinite content based on parameters.
 
 IN PROGRESS: [Javascript Timelines from Google Data Commons API](/data-commons/docs/data/) - Priyanka, Mehul <!--Aishwrya, Vishnupriya-->
+
+TO DO: Update our existing [address auto-lookup](../home/) to change state=NY etc. in URL hash. (Currently visible on localhost only.)
 
 We're pulling images and video via [our FeedPlayer](https://model.earth/feed) which can be pointed at a Github repo or any API.
 
@@ -62,7 +64,7 @@ We're pulling images and video via [our FeedPlayer](https://model.earth/feed) wh
 TO DO: [Hosting DataCommons locally with Flask](/localsite/info/data/datacommons) - Vishnupriya and our GDC team
 -->
 
-## 2. Planet AI - Javascript with LLM APIs
+## 2. AI Javascript with LLM APIs (Planet repo)
 
 TO DO: Add a field called #gitrepo on our [home repo dev page](../home/repo) for pasting a Github account and repo name. Include an alert if the URL does not contain github.com (or another git provider), an account and a repo name.  
 
@@ -74,9 +76,7 @@ Integrate [our API storage in javascript](/localsite/tools/storage/api/) to stor
 
 **Python Retrieval Augmented Generation (RAG)**
 
-TO DO: Move Python Langchain into main branch.
-
-[Our Python Langchain Repo](https://github.com/modelearth/langchain/) <!--Dhananjay and Pranathi  -->
+TO DO: Move Python Langchain into main branch in [Our Python Langchain Repo](https://github.com/modelearth/langchain/) <!--Dhananjay and Pranathi  -->
 
 [Conversational RAG for 10 LLMs](https://python.langchain.com/docs/tutorials/qa_chat_history/) - Pradeep and Pranoy  
 
@@ -205,7 +205,7 @@ Bhavna, Yash
 
 ## 6. Feed Player React - Embeddable Viewer for Images and Video
 
-- [Discord API](https://discord.com/developers/docs/intro) - Our Team list is already pulled from Discord into our [Feed Player](https://model.earth/feed/) 
+- [Discord API](https://discord.com/developers/docs/intro) - Our Team list is pulled from Discord into our [Feed Player](https://model.earth/feed/) 
 
 - [Feed Player](../feed/dist) - Video and Images from API feeds and Google Sheet lists
 - [NASA Feed Viewer](../feed/view/#feed=nasa) - JSON, YAML, CSS, RSS - [Address Lookup](/feed/view/#feed=311)
