@@ -36,7 +36,7 @@ Select one of the 7 project areas below and add your first name below by editing
 
 Please actively update README files. Add status updates and deployment steps, correct existing notes. Send Loren an email whenever you send a pull request. If you are uncertain about an edit, make your best guess and email Loren AFTER you submit the PR.
 
-[Fork and clone related repos](../localsite/start/steps/) - When writing Loren, include a review link. Your review link will be: [youraccount].github.io/[therepo] once you've turned on Github Pages for your fork of the repo and for your fork of the localsite repo.
+[Fork and clone related repos](../localsite/start/steps/) - When writing Loren, include a review link. Your review link will be: [youraccount].github.io/[therepo] once you've turned on Github Pages for your both your fork of the repo and for your fork of the [localsite repo](https://github.com/modelearth/localsite/).
 
 You can edit this page to add your name by the projects, and add details for new updates. Send a PR and write Loren.
 
@@ -47,7 +47,7 @@ Our [Everybody's Home Page](../home) process is being designed to display infini
 
 IN PROGRESS: [Javascript Timelines from Google Data Commons API](/data-commons/docs/data/) - Priyanka, Mehul <!--Aishwrya, Vishnupriya-->
 
-TO DO: Update our existing [address auto-lookup](../home/) to change state=NY etc. in URL hash. (Currently visible on localhost only.)
+TO DO: Update our existing [address auto-lookup](../home/) to set state=NY etc. in the URL hash. (Currently visible on [localhost only](http://localhost:8887/home/).)
 
 We're pulling images and video via [our FeedPlayer](https://model.earth/feed) which can be pointed at a Github repo or any API.
 
