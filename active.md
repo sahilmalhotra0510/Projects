@@ -139,7 +139,7 @@ TO DO: Send URL hash # parameters to our [Run Models CoLab](/RealityStream) usin
 -->
 
 
-- [RealityStream](/RealityStream/) - Machine Learning Classification Models - Xucen Liao
+- [RealityStream](/RealityStream/) - Machine Learning Classification Models - Xucen
 - [Process Industry NAICS by Zip Code](/community-zipcodes/mail) - DONE Yunbo
 - [ML for Community Forecasting Timelines](../data-pipeline/timelines/) - Zip code pipeline - TO DO
 - [Open Data Panels - YAML Display](/OpenFootprint) - Microsoft Plug and Play - TO DO
