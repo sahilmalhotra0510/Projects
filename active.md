@@ -175,7 +175,7 @@ TO DO: [Python to pull Harmonized Code (HS) lookups into Supabase](/OpenFootprin
 
 TO DO: [Sankey Industry eChart](/OpenFootprint/charts/echarts/sankey-nodeAlign-left.html) - eCharts uses a common echarts.min.js file which we'll load in [Feed Viewer](/feed/view)
 
-TO DO: [Python - Finalize our All the Places data by State and Zip](/places)
+TO DO: [Python - Finalize our All the Places data by State and Zip](/places) - Poshan
 
 #### Exiobase and Flask
 
