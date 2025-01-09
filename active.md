@@ -66,7 +66,7 @@ TO DO: [Hosting DataCommons locally with Flask](/localsite/info/data/datacommons
 
 ## 2. Ai Javascript with LLM APIs (Planet repo)
 
-TO DO: Add a field called #gitrepo on our [home repo dev page](../home/repo) for pasting a Github account and repo name. Include an alert if the URL does not contain github.com (or another git provider), an account and a repo name.  
+Our [repo pull page](../home/repo) uses GitHub's API to load images, music and text to send to LLM APIs using javascript.
 
 TO DO: Add javascript to our [Planet repo](https://github.com/modelearth/planet/) that uses [Langchain's Chat Model Interface](https://python.langchain.com/docs/concepts/chat_models/), send a page from any GitHUb repo to an AI API like OpenAI to provide Retrieval Augmented Generation (RAG) using [LangChain.js](https://api.js.langchain.com) javascript. - Dhananjay, Luyang 
 
@@ -126,6 +126,8 @@ for Interactive presentation backgrounds, Request Visualization
 ## 3. RealityStream ML - Server-Side Python
 
 [Run Models Colab](/RealityStream/)
+
+TO DO: Javascript interface to choose from our existing pre-processed [job data](/RealityStream) and Google Data Commons API.
 
 TO DO: Send URL hash # parameters to our [Run Models CoLab](/RealityStream) using a [webhook on Google Cloud (ChatGPT)](https://chatgpt.com/share/670e7002-85fc-8003-a466-9b682012f3ea)
 
