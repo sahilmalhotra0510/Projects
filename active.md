@@ -171,7 +171,7 @@ Contributors: Gary, Satya, Himanshu, Sahil
 
 TO DO: [Chord Chart Data Prep](/io/charts/chord/) <!-- Poorna and everyone interested -->
 
-TO DO: [Python to pull Harmonized Code (HS) lookups into Supabase](/OpenFootprint/harmonized-system/) - Initial work by Wenjie (and Chen)
+TO DO: [Python to pull Harmonized Code (HS) lookups into Supabase](/OpenFootprint/harmonized-system/) - Kruthi
 
 TO DO: [Sankey Industry eChart](/OpenFootprint/charts/echarts/sankey-nodeAlign-left.html) - eCharts uses a common echarts.min.js file which we'll load in [Feed Viewer](/feed/view)
 
