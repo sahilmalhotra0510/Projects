@@ -183,7 +183,7 @@ For our [International Trade Flow](/openfootprint/trade/) we can integrate our [
 
 #### US EPA State Impacts
 
-TO DO: Pull into SQL DuckDB
+TO DO: Pull into SQL DuckDB - Sahil & Himanshu
 
 [Javascript updates for US EPA impact reports](/useeio.js/footprint/)  
 [React Team - Mosaic column checkboxes](/io/charts)  - Pallavi 
